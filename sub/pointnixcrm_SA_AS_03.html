@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>포인트닉스 CRM</title>
+		<link rel="stylesheet" href="../css/common.css">
+		<script src="../js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+       
+        <section class="contents">
+            
+            <main class="sub-main">
+                <h1>전자장부</h1>
+                <div class="sub-contents asvisited">  
+                  <form action="">     
+                 	<ul class="tab-st1">
+                        <li class="on"><a href="#">덴탈</a></li>
+                        <li><a href="#">메디칼</a></li>
+                        <li><a href="#">체어</a></li>
+                        <li><a href="#">CT</a></li>
+                    </ul>
+               		<div class="title-wrap">
+               			<h2>AS방문일지</h2>
+               		</div>
+                 	<div class="fixed-box">
+                 		<table class="table-st2" title="계약내용 조회">
+							<colgroup>
+								<col style="width: 15%">
+								<col>
+							</colgroup>
+							<tr>
+								<th scope="col">문서번호</th>
+								<td>
+									KKN-2020-112
+								</td>
+							</tr>
+						</table>
+						<div class="right">
+							<span class="form-ui chk-box">
+	                            <input type="checkbox" name="chk" id="local-office">
+	                            <label for="local-office">현지출근</label>
+	                        </span>
+						</div>
+                 	</div>
+                 	<div class="fixed-box">
+						<h3>고객정보</h3>
+                  		<table class="table-st2" title="계약내용 조회">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">담당영업소</th>
+								<td>
+									서울강남지점	
+								</td>
+								<th scope="col">영업지원담당자</th>
+								<td>
+									김강남
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">기술지원소</th>
+								<td>
+									서울남부아파트
+								</td>
+								<th scope="col">기술지원담당자</th>
+								<td>
+									이길동
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">거래처명</th>
+								<td>
+									<div class="form-ui srch-box">
+		                                <input type="text" value="">
+		                                <button type="button" class="btn srch">검색하기</button>
+		                            </div>
+								</td>
+								<th scope="col">대표자명</th>
+								<td>
+									홍길동
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">출신학교</th>
+								<td>
+									조선대학교
+								</td>
+								<th scope="col">대표자 면허번호</th>
+								<td>
+									12345
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">전공</th>
+								<td>
+									치의학과
+								</td>
+								<th scope="col">졸업년도</th>
+								<td>
+									1999
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">주소</th>
+								<td>
+									서울특별시 구로구 구로동 212-1
+								</td>
+								<th scope="col">사업자번호</th>
+								<td>
+									123-45-67890
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">전화번호</th>
+								<td>
+									02-123-4567
+								</td>
+								<th scope="col">휴대전화</th>
+								<td>
+									010-1234-1234
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="fixed-box">
+						<h3>접수정보</h3>
+	                  	<table class="table-st2" title="접수정보">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">AS접수번호</th>
+								<td>
+									<div class="form-ui srch-box">
+		                                <input type="text" value="AS20200307">
+		                                <button type="button" class="btn srch" onclick="openPop('as-num-search')">검색하기</button>
+		                            </div>
+								</td>
+								<th scope="col">담당자</th>
+								<td>
+									 <input type="text" value="서울강남지점/김강남" disabled>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">처리구분</th>
+								<td>
+									<div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="">수거</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+								</td>
+								<th scope="col">처리구분</th>
+								<td>
+									<div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="">수리요청</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">접수일시</th>
+								<td class="date">
+									 <input type="text" value="2020-03-16" disabled>
+									 <input type="text" value="10:30 AM" disabled>
+								</td>
+								<th scope="col">방문/원격요청일시</th>
+								<td class="date">
+									 <input type="text" value="2020-03-16" disabled>
+									 <input type="text" value="10:30 AM" disabled>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">분류</th>
+								<td colspan="3" class="category">
+									<div class="form-ui select-box w250">
+			                            <select name="" id="">
+			                                <option value="">덴탈</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+			                        <div class="form-ui select-box w186">
+			                            <select name="" id="">
+			                                <option value="">CT</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+			                        <div class="form-ui select-box w135">
+			                            <select name="" id="">
+			                                <option value="">SK-2</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+			                        <div class="form-ui select-box w250">
+			                            <select name="" id="">
+			                                <option value="">덴탈</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">품목명</th>
+								<td colspan="3">
+									<div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="">품목리스트</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">내용<br>(고장 증상 등)</th>
+								<td colspan="3">
+									<textarea name="" id="" cols="30" rows="10"></textarea>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="fixed-box">
+						<h3>수리정보</h3>
+	                  	<table class="table-st2" title="수리정보">
+							<colgroup>
+								<col style="width: 15%">
+								<col>
+							</colgroup>
+							<tr>
+								<th scope="col">수리담당자</th>
+								<td>
+									 <input type="text" value="서울남부파트/이길동" disabled>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">진행여부</th>
+								<td>
+									<div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="">수리진행</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+								</td>
+							</tr>
+						</table>
+						<table class="table-st1">
+							<colgroup>
+								<col style="width:4.4%"/>
+								<col />
+								<col style="width:13%"/>
+								<col style="width:13%"/>
+								<col style="width:27.7%"/>
+								<col style="width:11.6%"/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>NO</th>
+									<th>품명</th>
+									<th>SERIAL NO</th>
+									<th>고장증상</th>
+									<th>수리내용</th>
+									<th>금액</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td><input type="text" value="CT-200" ></td>
+									<td><input type="text" value="C-1254" ></td>
+									<td><input type="text" value="출력오류" ></td>
+									<td><input type="text" value="출력단자 교체" ></td>
+									<td><input type="text" value="25,000" ></td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="6" class="result">합계 : <strong>25,000</strong><span class="">원</span></td>
+								</tr>
+							</tfoot>
+						</table>
+						<table class="table-st2" title="수리정보">
+							<colgroup>
+								<col style="width: 15%">
+								<col>
+							</colgroup>	
+							<tr>
+								<th scope="col">내용<br>(고장 증상 등)</th>
+								<td>
+									<textarea name="" id="" cols="30" rows="10"></textarea>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="fixed-box">
+						<h3>처리내역</h3>
+	                  	<table class="table-st2" title="처리내역">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">시정조치 요구서</th>
+								<td>
+									<span class="form-ui radio-box">
+			                            <input type="radio" name="complain" id="complain01">
+			                            <label for="complain01">필요</label>
+			                        </span>
+			                        <span class="form-ui radio-box">
+			                            <input type="radio" name="complain" id="complain02">
+			                            <label for="complain02">불필요</label>
+			                        </span>
+								</td>
+								<th scope="col">CAPA No.</th>
+								<td>
+									 <input type="text" value="" >
+								</td>
+							</tr>
+							<tr>
+								<th scope="col" rowspan="2">조사내용<br>(제품 불량내용)</th>
+								<td colspan="3">
+									<span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="investi01">
+			                            <label for="investi01">흡입 및 도색불량</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="investi02">
+			                            <label for="investi02">데이터 통신오류</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="investi03">
+			                            <label for="investi03">조립상태불량</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="investi04">
+			                            <label for="investi04">조사불필요</label>
+			                        </span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<input type="text" value="" title="조사내용 입력" placeholder="조사내용 입력">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">불만/요구사항</th>
+								<td colspan="3">
+									 <input type="text" value="" title="불만/요구사항 입력" placeholder="불만/요구사항 입력">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">처리결과</th>
+								<td colspan="3">
+									<textarea name="" id="" cols="30" rows="10" title="처리결과 입력" placeholder="처리결과 입력"></textarea>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<div class="fixed-box">
+						<h3>점검사항</h3>
+						<table class="table-st1">
+							<thead>
+								<tr>
+									<th rowspan="2">점검리스트</th>
+									<th colspan="3" Scope=”rowgroup”>점검결과</th>
+								</tr>
+								<tr>
+									<th>PASS</th>
+									<th>FAIL</th>
+									<th>N/A</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>점검사항 리스트가 보여지는 곳</td>
+									<td>
+									 	<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result01-01">
+				                            <label for="result01-01"><span class="hidden">pass</span></label>
+				                        </span>
+									</td>
+									<td>
+										<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result01-02">
+				                            <label for="result01-02"><span class="hidden">fail</span></label>
+				                        </span>
+									</td>
+									<td>
+										<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result01-03">
+				                            <label for="result01-03"><span class="hidden">n/a</span></label>
+				                        </span>
+									</td>
+								</tr>
+								<tr>
+									<td>점검사항 리스트가 보여지는 곳</td>
+									<td>
+									 	<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result02-01">
+				                            <label for="result02-01"><span class="hidden">pass</span></label>
+				                        </span>
+									</td>
+									<td>
+										<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result02-02">
+				                            <label for="result02-02"><span class="hidden">fail</span></label>
+				                        </span>
+									</td>
+									<td>
+										<span class="form-ui chk-box">
+				                            <input type="checkbox" name="" id="result02-03">
+				                            <label for="result02-03"><span class="hidden">n/a</span></label>
+				                        </span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+	                  </div><!-- // fixed-box -->
+                  	<div class="btn-box">
+                  		<button type="button" class="btn red gradient long">등록하기</button>
+                  		<button type="button" class="btn gray gradient long">취소하기</button>
+                  	</div>
+                   </form>
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+      <div class="popup" id="as-num-search">
+        <div class="pop-contain">
+            <div class="btn-close"><button type="button" class="btn ico close" onclick="closePop('as-num-search')">닫기</button></div>
+           <!--  <div class="pop-tit">
+                <h2>AS접수번호 검색</h2>
+            </div> -->
+            <div class="pop-con">
+                <h3>AS접수번호 검색</h3>
+                <div class="result-box">
+                	<table class="table-st1">
+	                	<colgroup>
+	                		<col style="width:22%"/>
+	                		<col style="width:20.5%"/>
+	                		<col style="width:11.5%"/>
+	                		<col style="width:21%"/>
+	                		<col />
+	                	</colgroup>
+	                	<thead>
+	                		<tr>
+	                			<th>AS접수번호</th>
+	                			<th>AS접수일자</th>
+	                			<th>접수자</th>
+	                			<th>거래처명</th>
+	                			<th>품목명</th>
+	                		</tr>
+	                	</thead>
+	                	<tbody>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                		<tr>
+	                			<td class="blue">AS2020-0319</td>
+	                			<td>2020-03-20</td>
+	                			<td>박재홍</td>
+	                			<td>포인트치과</td>
+	                			<td></td>
+	                		</tr>
+	                	</tbody>
+	                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

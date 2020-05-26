@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+
+  <section class="wrapper">
+<!-- <header>
+    <h1 class="logo"><a href="/"><img src="../img/logo.png" alt=""></a></h1>
+    <nav>
+        <ul>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+    </nav>
+</header> -->
+
+    <section class="contents">
+<!-- <aside class="sub-menu">
+      <div class="sub-tit"></div>
+      <nav>
+        <ul>
+            <li><a href="">메뉴1</a></li>
+        </ul>
+      </nav>
+    </aside> -->
+
+      <main class="sub-main">
+        <h1>영업활동</h1>
+        <div class="sub-contents monthlyPlan">
+
+          <div class="table-wrap">
+			
+			
+			<span class="ico ico-txt orange" onclick="openPop('comPopup1')">방문처 요약</span>
+           <span class="ico ico-txt blue" onclick="openPop('csSrch2')">고객상세정보</span>
+           <span class="ico ico-txt blue" onclick="openPop('comPopup2')">품목요약</span>
+           
+           
+          </div>
+        </div>
+      </main>
+    </section>
+  </section>
+  
+  
+	<!------- 방문처 요약 팝업 컨텐츠 시작 ------->
+	<div class="popup view-popup" id="comPopup1">
+	 <div class="pop-contain">
+	     <div class="btn-close">
+	     <button type="button" class="btn ico close" onclick="closePop('comPopup1')">닫기</button></div>
+	     <div class="pop-con">
+          	<h3 class="h3-br">방문처요약</h3>
+			<div class="date-box">
+				<select name="" id="">
+					<option value="">2020</option>
+				</select>
+				<select name="" id="">
+					<option value="">5</option>
+				</select>
+			</div>
+			 <table class="table-st1 ea-table" title="">
+	              <colgroup>
+	                 <col style="width: 25%">
+			         <col style="width: 25%">
+			         <col style="width: 25%">
+			         <col style="width: 25%">
+	               </colgroup>
+	               <tbody><tr>
+	                   <th scope="col">담당거래처</th>
+	                   <th scope="col">금월방문처</th>
+	                   <th scope="col">방문횟수합계</th>
+	                   <th scope="col">금월미방문처</th>
+	               </tr>
+	               <tr>
+	                 <td>53</td>
+	                 <td>61</td>
+	                 <td>72</td>
+	                 <td>15</td>
+	               </tr>
+             	</tbody>
+             </table>
+	         <table class="table-st1 list-table" title="">
+	              <colgroup>
+	                 <col style="width: 15%">
+			         <col style="width: 40%">
+			         <col style="width: 20%">
+			         <col style="width: 25%">
+	               </colgroup>
+	               <tbody><tr>
+	                   <th scope="col">번호</th>
+	                   <th scope="col">거래처명</th>
+	                   <th scope="col">월방문</th>
+	                   <th scope="col">누적방문</th>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" onclick="comopenPop('customer2')">포인트 치과</a></td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+             </tbody>
+             </table>
+			<div class="pager-wrap">
+				<div class="pager">
+           			<ol>
+           				<li class="on"><strong>1</strong></li>
+           				<li><a href="/">2</a></li>
+           				<li><a href="/">3</a></li>
+           				<li><a href="/">4</a></li>
+           				<li><a href="/">5</a></li>
+           				<li><a href="/">6</a></li>
+           				<li><a href="/">7</a></li>
+           				<li><a href="/">8</a></li>
+           				<li><a href="/">9</a></li>
+           			</ol>
+           			<button type="button" class="btn btn-next">다음</button>
+           		</div>
+			</div>
+	     </div>
+	     
+	   </div>
+	</div>
+	<!-------방문처 요약 팝업 컨텐츠 끝 --------->
+	
+	
+	
+	<!-------- 거래처 활동내역 팝업 컨텐츠 시작 ------->
+	<div class="compopup view-popup m-width" id="customer2">
+	 <div class="pop-contain">
+	     <div class="btn-close"><button type="button" class="btn ico close" onclick="comclosePop('customer2')">닫기</button></div>
+	     <div class="pop-con">
+	     
+		    <h3 class="h3-br">거래처별 활동내역</h3>
+          
+			<div class="cs-wrap">
+				<table class="table-st1" title="">
+	              <colgroup>
+	                 <col style="width: 10%">
+			         <col style="width: 20%">
+			         <col style="width: 10%">
+			         <col style="width: 10%">
+			         <col style="width: 15%">
+			         <col style="width: 25%">
+	               </colgroup>
+	               <tbody><tr>
+	                   <th scope="col">번호</th>
+	                   <th scope="col">거래처</th>
+	                   <th scope="col">시간</th>
+	                   <th scope="col">구분</th>
+	                   <th scope="col">활동계획</th>
+	                   <th scope="col">상담내용</th>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td><a href="#" class="blue">포인트 치과</a></td>
+	                 <td>09:30</td>
+	                 <td>영업</td>
+	                 <td>BA, CT</td>
+	                 <td>해당내용 확인처리</td>
+	               </tr>
+             	</tbody>
+             </table>
+			</div>
+	         
+	     </div>
+	     
+	   </div>
+	</div>
+	<!------- 거래처 활동내역 팝업 컨텐츠 끝 --------->
+	
+
+
+	<!-------- 고객상세정보 팝업 컨텐츠 시작 ------->
+	<div class="popup list-popup" id="csSrch2" >
+	 <div class="pop-contain csForm">
+	     <div class="btn-close"><button type="button" class="btn ico close" onclick="closePop('csSrch2')">닫기</button></div>
+	     <div class="pop-con">
+	     <div class="title-wrap">
+          	<h2>고객상세정보</h2>
+          </div>
+	         <table class="table-st2" title="고객정보">
+              <colgroup>
+                <col style="width: 18%">
+                <col style="width: 32%">
+                <col style="width: 18%">
+                <col style="width: 32%">
+              </colgroup>
+              <tbody><tr>
+                <th>담당영업소</th>
+                <td>서울강남지점</td>
+                <th>영업지원담당자</th>
+                <td>김강남</td>
+              </tr>
+              <tr>
+                <th>기술지원소</th>
+                <td>서울남부파트</td>
+                <th>기술지원담당자</th>
+                <td>이길동</td>
+              </tr>
+              <tr>
+                <th>거래처명</th>
+                <td class="blue">포인트치과(A123456)</td>
+                <th>대표자명</th>
+                <td>홍길동</td>
+              </tr>
+             <tr>
+                <th>출신학교</th>
+                <td>조선대학교</td>
+                <th>대표자 면허번호</th>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <th>전공</th>
+                <td>치의학과</td>
+                <th>졸업년도</th>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>서울특별시 구로구 구로동 212-1</td>
+                <th>사업자번호</th>
+                <td>123-45-67890</td>
+              </tr>
+              <tr>
+                <th scope="col">전화번호</th>
+                <td>02-123-4567</td>
+                <th scope="col">휴대전화</th>
+                <td>010-1234-5678</td>
+              </tr>
+            </tbody>
+            </table>
+            
+			<div class="table-wrap">
+            <div class="sub-title" id="table">
+              <h3>특이사항</h3>
+            </div>
+
+            <table class="table-st2 cs-table" title="특이사항">
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 25%">
+                <col style="width: 60%">
+              </colgroup>
+              <tbody><tr>
+                <th scope="col">거래처</th>
+                <th scope="col">작성자</th>
+                <th scope="col">내용</th>
+              </tr>
+             <tr>
+             	<td>2020-03-15</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+             <tr>
+             	<td>2020-03-15</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+             <tr>
+             	<td>2020-03-15</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+            </tbody>
+            </table>
+          </div>
+	     </div>
+	     
+	   </div>
+	</div>
+	<!-------- 고객상세정보 팝업 컨텐츠 끝 ------->
+	
+	<!------- 방문처 요약 팝업 컨텐츠 시작 ------->
+	<div class="popup view-popup" id="comPopup2">
+	 <div class="pop-contain">
+	     <div class="btn-close">
+	     <button type="button" class="btn ico close" onclick="closePop('comPopup2')">닫기</button></div>
+	     <div class="pop-con">
+          	<h3 class="h3-br">품목요약</h3>
+			<div class="date-box">
+				<select name="" id="">
+					<option value="">2020</option>
+				</select>
+				<select name="" id="">
+					<option value="">5</option>
+				</select>
+			</div>
+			 <table class="table-st1 ea-table" title="">
+	              <colgroup>
+	                 <col style="width: 50%">
+			         <col style="width: 25%">
+			         <col style="width: 25%">
+	               </colgroup>
+	               <tbody><tr>
+	                   <th scope="col">월 전체 활동수</th>
+	                   <th scope="col">판촉</th>
+	                   <th scope="col">일반</th>
+	               </tr>
+	               <tr>
+	                 <td>53</td>
+	                 <td>10</td>
+	                 <td>5</td>
+	               </tr>
+             	</tbody>
+             </table>
+	         <table class="table-st1 list-table" title="">
+	              <colgroup>
+	                 <col style="width: 15%">
+			         <col style="width: 40%">
+			         <col style="width: 20%">
+			         <col style="width: 25%">
+	               </colgroup>
+	               <tbody><tr>
+	                   <th scope="col">번호</th>
+	                   <th scope="col">거래처코드</th>
+	                   <th scope="col">월활동수</th>
+	                   <th scope="col">누적활동수</th>
+	               </tr>
+	               <tr>
+	                 <td>1</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>2</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>3</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>4</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>5</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>6</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>7</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>8</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>9</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+	               <tr>
+	                 <td>10</td>
+	                 <td>LG 모니터 24'</td>
+	                 <td>1</td>
+	                 <td>15</td>
+	               </tr>
+             </tbody>
+             </table>
+			<div class="pager-wrap">
+				<div class="pager">
+           			<ol>
+           				<li class="on"><strong>1</strong></li>
+           				<li><a href="/">2</a></li>
+           				<li><a href="/">3</a></li>
+           				<li><a href="/">4</a></li>
+           				<li><a href="/">5</a></li>
+           				<li><a href="/">6</a></li>
+           				<li><a href="/">7</a></li>
+           				<li><a href="/">8</a></li>
+           				<li><a href="/">9</a></li>
+           			</ol>
+           			<button type="button" class="btn btn-next">다음</button>
+           		</div>
+			</div>
+	     </div>
+	     
+	   </div>
+	</div>
+	<!-------방문처 요약 팝업 컨텐츠 끝 --------->
+	
+	
+</body>
+
+</html>

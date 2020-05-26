@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="../css/common.css">
+	<script src="../js/common-ui.js"></script>
+</head>
+
+<body>
+<section class="wrapper">
+	<section class="contents">
+		
+ <main class="sub-main">
+	<h1>주문 등록</h1>
+	<div class="sub-contents orderPK">
+		 		<ul class="tab-st1">
+                     <li><a href="#">자주하는 주문</a></li>
+                     <li class="on"><a href="#">SM System</a></li>
+                 </ul>
+                 
+                 <div class="title-wrap">
+                 	<h2> 패키지 간편주문</h2>
+                 </div>
+                 
+                 <ul class="tab-st2 ea6"> 
+                     <li class="on"><a href="#">Fixture</a></li>
+                     <li><a href="#">Mount</a></li>
+                     <li><a href="#">Cover Screw</a></li>
+                     <li><a href="#">Healing Abutment</a></li>
+                     <li><a href="#">Abutment</a></li>
+                     <li><a href="#">Abutment Component</a></li>
+                 </ul>
+		<form action="" name="frm">
+		<div class="table-wrap pk-wrap">
+			<div class="pk-list-box">
+				<div class="sub-title" id="table">
+					<h3>Fixture List</h3>
+					<div class="btn-wrap">
+						<button type="button" class="btn gray" onclick="reset_all('frm','option')">선택초기화</button>
+					</div>
+				</div>
+			
+		<ul class="list-head">
+			<li>Design</li>
+			<li>Surface</li>
+			<li>Size</li>
+			<li>Diameter</li>
+			<li>Length</li>
+			<li>Mount</li>
+		</ul>
+		
+		<ul class="list-body">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Design1">
+                          <label for="Design1">TS II</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Design2">
+                          <label for="Design2">TS III</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Design3">
+                          <label for="Design3">TS IV</label>
+      				</span>
+			</li>
+		</ul>
+		
+		
+		<ul class="list-body">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Surface1">
+                          <label for="Surface1">BA</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Surface2">
+                          <label for="Surface2">CA</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Surface3">
+                          <label for="Surface3">HA</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Surface4">
+                          <label for="Surface4">SA</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Surface5">
+                          <label for="Surface5">SOL</label>
+      				</span>
+			</li>
+		</ul>
+		
+		
+		<ul class="list-body">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Size1">
+                          <label for="Size1">Mini</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Size2">
+                          <label for="Size2">Regular</label>
+      				</span>
+			</li>
+		</ul>
+		
+		<ul class="list-body">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter1">
+                          <label for="Diameter1">Dø4.0</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter2">
+                          <label for="Diameter2">Dø4.5</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter3">
+                          <label for="Diameter3">Dø5.0</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter4">
+                          <label for="Diameter4">Dø5.5</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter5">
+                          <label for="Diameter5">Dø6.0</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Diameter6">
+                          <label for="Diameter6">Dø6.5</label>
+      				</span>
+			</li>
+		</ul>
+		
+		
+		<ul class="list-body">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length1">
+                          <label for="Length1">7.0(6)mm</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length2">
+                          <label for="Length2">7.0(7)mm</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length3">
+                          <label for="Length3">8.5mm</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length4">
+                          <label for="Length4">10.1mm</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length5">
+                          <label for="Length5">11.5mm</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Length6">
+                          <label for="Length6">13.0mm</label>
+      				</span>
+			</li>
+		</ul>
+		
+		<ul class="list-body mr-0">
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="checkbox" name="option" id="Mount1">
+                          <label for="Mount1">MoMount</label>
+      				</span>
+			</li>
+			<li>
+				<span class="form-ui chk-box2">
+                          <input type="radio" name="option" id="Mount2">
+                          <label for="Mount2">Pre-Mounted</label>
+      				</span>
+			</li>
+		</ul>
+	</div>
+	
+			<div class="pk-order-box">
+				<div class="sub-title" id="table">
+					<h3>패키지 간편 주문서</h3>
+					<div class="btn-wrap">
+						<button type="button" class="btn light" >선택제품삭제</button>
+					</div>
+				</div>
+
+				<table class="table-st1" title="">
+                   <colgroup>
+                       <col style="width:6%">
+			           <col>
+			           <col style="width:18%">
+			           <col style="width:18%">
+			           <col style="width:18%">
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+								<span class="form-ui chk-box">
+	                              	<input type="checkbox" name="allchk" id="allchk" onchange="check_all(this,'frm','chk')">
+	                               <label for="allchk"></label>
+                          	 	</span>	
+                              </th>
+                              <th scope="col">상품명</th>
+                              <th scope="col">수량</th>
+                              <th scope="col">단가</th>
+                              <th scope="col">금액</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk" id="chk1">
+			                          <label for="chk1"></label>
+			                      </span>
+                   				</td>
+	                              <td>
+	                                 <a href="">
+	                                  TS III HA Fixture(Regul
+	                                  ar, Dø4.0, 8.5mm, Pre-
+	                                  Mounted)
+	                                 </a> 
+	                              </td>
+	                              <td>
+	                                  <div class="form-ui range-box">
+	                                      <input type="text" value="0">
+	                                      <ul>
+			                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+			                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+			                            </ul>
+	                                  </div>
+	                              </td>
+	                              <td>
+	                                  175,000
+	                              </td>
+	                              <td class="emph">
+	                                  350,000
+	                              </td>
+                          </tr>
+                           <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk" id="chk2">
+			                          <label for="chk2"></label>
+			                      </span>
+                      		</td>
+                              <td>
+                                 <a href="">
+                                  TS III HA Fixture(Regul
+                                  ar, Dø4.0, 8.5mm, Pre-
+                                  Mounted)
+                                 </a> 
+                              </td>
+                              <td>
+                                  <div class="form-ui range-box">
+                                     <input type="text" value="0">
+                                     <ul>
+		                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+		                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+		                            </ul>
+                                  </div>
+                              </td>
+                              <td>
+                                  175,000
+                              </td>
+                              <td class="emph">
+                                  350,000
+                              </td>
+                          </tr>
+                      </tbody>
+                      <tfoot>
+                          <tr class="table-emph">
+                              <th colspan="2" scope="row">합계</th>
+                              <td>3</td>
+                              <td colspan="2" class="result">600,000 <span class="won">원</span></td>
+                          </tr>
+                      </tfoot>
+                  </table>
+                 
+           			<div class="order-btn">
+						<button type="button" class="btn gray gradient long">자주하는 주문 등록</button>
+						<button type="button" class="btn red gradient long" onclick="openPop('order')">주문하기</button>
+					</div>
+					
+				</div>
+				
+				
+			<div class="pk-select-box">
+				<div class="sub-title" id="table">
+					<h3>선택상품</h3>
+				</div>
+				<div class="select-list">
+					<ul class="list-st1">
+                        <li><a href="#">TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)</a></li>
+                        <li><a href="#">TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)</a></li>
+                        <li><a href="#">TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)TS III BA Fixture(Regular, Dø4.0, 8.5mm, Pre-Mounted)</a></li>
+                    </ul>
+				</div>
+				<div class="btn-wrap">
+              		<button type="button" class="btn black black middle">주문담기</button>
+            	</div>
+			</div>
+		</div>
+		</form>
+				
+			</div>
+		</main>
+	</section>
+</section>
+	<!-------- 주문하기 버튼 클릭시 팝업창 컨텐츠 시작 ------->
+	<div class="popup order-popup" id="order">
+	 <div class="pop-contain">
+	     <div class="btn-close"><button type="button" class="btn ico close" onclick="closePop('order')">닫기</button></div>
+	     <div class="pop-tit">
+	         <h2>포인트치과</h2>
+	         <p>원장명 : 홍길동 / 전화번호 : 02-123-4567</p>
+	     </div>
+	     <div class="pop-con">
+	         <h3>주문내역</h3>
+	         <table class="table-st1" title="">
+               <colgroup>
+               <col style="width:5%">
+	           <col>
+	           <col style="width:10%">
+	           <col style="width:10%">
+	           <col style="width:10%">
+	           <col style="width:10%">
+	           <col style="width:10%">
+                </colgroup>
+                  <thead>
+                      <tr>
+                          <th scope="col">번호</th>
+                          <th scope="col">상품명</th>
+                          <th scope="col">수량</th>
+                          <th scope="col">단가</th>
+                          <th scope="col">할인율</th>
+                          <th scope="col">할인단가</th>
+                          <th scope="col">금액</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+						<td>1</td>
+                        <td class="left">
+                           <a href="">
+                            TS III HA Fixture(Regul
+                            ar, Dø4.0, 8.5mm, Pre-
+                            Mounted)
+                           </a> 
+                        </td>
+                        <td>
+                            <div class="form-ui range-box">
+                                <input type="text" value="0">
+                                <ul>
+	                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+	                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+	                            </ul>
+                            </div>
+                        </td>
+                        <td>175,000</td>
+                        <td>69.697%</td>
+                        <td>53,030</td>
+                        <td>106,060</td>
+                      </tr>
+                      <tr>
+			<td>2</td>
+                        <td class="left">
+                           <a href="">
+                            TS III HA Fixture(Regul
+                            ar, Dø4.0, 8.5mm, Pre-
+                            Mounted)
+                           </a> 
+                        </td>
+                        <td>
+                            <div class="form-ui range-box">
+                                <input type="text" value="0">
+                               	<ul>
+	                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+	                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+	                            </ul>
+                            </div>
+                        </td>
+                        <td>175,000</td>
+                        <td>69.697%</td>
+                        <td>53,030</td>
+                        <td>106,060</td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr class="table-emph">
+                          <th colspan="2" scope="row">합계</th>
+                          <td>3</td>
+                          <td colspan="4" class="result">181,818 <span class="won">원</span></td>
+                      </tr>
+                  </tfoot>
+              </table>
+	     </div>
+	     <div class="pop-con">
+	         <h3>PKG 차감내역</h3>
+	         <table class="table-st1 table-view" title="">
+	              <colgroup>
+	                 <col>
+			         <col>
+			         <col>
+	               </colgroup>
+	               <tr>
+	                   <th scope="col">보유 PKG</th>
+	                   <th scope="col">사용 전 잔액</th>
+	                   <th scope="col">사용 후 잔액</th>
+	               </tr>
+	               <tr>
+	                 <td>69.697%</td>
+	                 <td>53,030</td>
+	                 <td>106,060</td>
+	               </tr>
+             </table>
+	     </div>
+	     
+	     <div class="pop-con">
+	         <h3>배송정보</h3>
+	          <table class="table-st2" title="출고상세내역">
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 35%">
+                <col style="width: 15%">
+                <col style="width: 35%">
+              </colgroup>
+              <tr>
+                <th scope="col">업체택배</th>
+                <td colspan="3">
+
+                  <span class="form-ui radio-box">
+                    <input type="radio" name="parcel" id="parcel1">
+                    <label for="parcel1">업체택배</label>
+                  </span>
+                  <span class="form-ui radio-box"> <input type="radio" name="parcel" id="parcel2"> <label
+                      for="parcel2">자사택배</label>
+                  </span>
+
+                  <span class="form-ui radio-box"> <input type="radio" name="parcel" id="parcel3"> <label
+                      for="parcel3">직접수령</label>
+                  </span>
+                  <span class="form-ui radio-box"> <input type="radio" name="parcel" id="parcel4"> <label
+                      for="parcel4">퀵발송</label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col">수령자</th>
+                <td><input type="text" placeholder="수령자"></td>
+
+                <th scope="col">배송지</th>
+                <td>
+                  <span class="form-ui radio-box"> <input type="radio" name="recpt" id="recpt1"> <label
+                      for="recpt1">회원정보동일</label>
+                  </span> <span class="form-ui radio-box"> <input type="radio" name="recpt" id="recpt2"> <label
+                      for="recpt2">새로입력</label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td colspan="3">
+
+                  <table class="inner-table">
+                    <colgroup>
+                      <col style="width: 15%">
+                      <col style="width: 85%">
+                    </colgroup>
+                    <tr>
+                      <th>우편번호</th>
+                      <td colspan="3">
+                        <span class="form-ui input-box">
+                          <input type="text" placeholder="우편번호">
+                          <button type="button" class="btn gray middle">주소찾기</button>
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">지번주소</th>
+                      <td colspan="3"><input type="text" placeholder="지번주소"></td>
+                    </tr>
+                    <tr>
+
+                      <td colspan="3"><input type="text" placeholder="나머지주소를 입력해주세요"></td>
+                    </tr>
+                    <tr>
+                      <th scope="col">도로명주소</th>
+                      <td colspan="3"><input type="text" placeholder="도로명주소"></td>
+                    </tr>
+
+
+                  </table>
+
+                </td>
+              </tr>
+              <tr>
+                <th scope="col">휴대전화</th>
+                <td><input type="text" placeholder="휴대전화"></td>
+
+                <th scope="col">전화번호</th>
+                <td><input type="text" placeholder="전화번호"></td>
+              </tr>
+              <tr>
+                <th scope="col">요청사항</th>
+                <td colspan="3"><input type="text" placeholder="요청사항"></td>
+              </tr>
+            </table>
+	     </div>
+	     
+	     <div class="pop-btn">
+	         <button type="button" class="btn red gradient long">주문하기</button>
+	         <button type="button" class="btn gray gradient long" onclick="closePop('order')">취소하기</button>
+	       </div>
+	   </div>
+	</div>
+	<!------- 주문하기 버튼 클릭시 팝업창 컨텐츠 끝 --------->
+	
+
+</body>
+
+</html>

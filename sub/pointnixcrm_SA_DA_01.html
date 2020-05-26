@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="../css/common.css">
+	<script src="../js/common-ui.js"></script>
+	<script>
+		function edit(e){
+			var input = e.previousElementSibling;
+			if(input.disabled){
+				input.disabled = false;
+				input.value="";
+				input.focus();
+			}else{
+				alert("수정!");
+				input.disabled = true;
+			}
+		}
+	</script>
+</head>
+<body>
+    <section class="wrapper">
+      
+        <section class="contents">
+           
+            <main class="sub-main">
+                <h1>영업활동</h1>
+                <div class="sub-contents dailyChart">
+                  <h2 class="hidden">영업활동</h2>
+                  <div class="fixed-box">    
+                 	<h3>영업/AS활동결과</h3>
+	                <div class="select-pager">
+						<button type="button" class="btn ico prev">이전</button>
+						<button type="button" class="btn ico next">다음</button>
+						
+						<div class="month-box">
+							2020년 4월 24일 (금) <button class="btn ico calendar">달력</button>
+						</div>
+					</div><!--// select-pager -->
+                  </div><!-- // fixed-box -->
+                 <div class="result-box">
+                 	<table class="table-st1">
+                 		<colgroup>
+                 			<col style="width:4.2%"/>
+                 			<col style="width:14.4%"/>
+                 			<col style="width:6.5%"/>
+                 			<col style="width:6.5%"/>
+                 			<col />
+                 		</colgroup>
+                 		<thead>
+	                 		<tr>
+	                 			<th scope="row">NO</th>
+	                 			<th scope="row">거래처</th>
+	                 			<th scope="row">시간</th>
+	                 			<th scope="row">구분</th>
+	                 			<th scope="row">활동계획</th>
+	                 		</tr>
+                 		</thead>
+                 		<tbody>
+                 			<tr>
+                 				<td>1</td>
+                 				<td>포인트치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt orange">영업</span>
+                 				</td>
+                 				<td>
+                 					<div class="editbox">
+                 						<input type="text" value="기존값" disabled/>
+                 						<button type="button" class="btn black middle btn-edit" onclick="edit(this)">수정</button>
+                 					</div>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<td>2</td>
+                 				<td>금성치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt orange">영업</span>
+                 				</td>
+                 				<td class="left">
+                 					<button type="button" class="btn gray middle btn-list" onclick="openPop('package-list')">품목리스트</button>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<td>3</td>
+                 				<td>포인트치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt blue">AS</span>
+                 				</td>
+                 				<td>
+                 					<!-- <input type="text" placeholder="내용 입력" /> -->
+                 					<div class="editbox">
+                 						<input type="text" value=""/>
+                 						<button type="button" class="btn black middle btn-edit">등록</button>
+                 					</div>
+                 				</td>
+                 			</tr>
+                 		</tbody>
+                 	</table>
+                 </div><!--  // result-box -->
+             	 <!-- <div class="btn-box">
+               		<button type="button" class="btn red gradient long w90">등록</button>
+                 	<button type="button" class="btn gray gradient long w90">취소</button>
+               	 </div> -->
+               </div><!-- // sub-contents -->
+<!--    popup -->
+ <div class="popup" id="package-list">
+    <div class="pop-contain">
+        <div class="btn-close"><button type="button" class="btn ico close" onclick="closePop('package-list')">닫기</button></div>
+        <div class="pop-con" style="width:380px">
+            <h3>활동계획리스트</h3>
+           	<ul class="tab tab-st2 ea3"> 
+                <li class="on"><a href="javascript:void(0)" onclick="tab(0)" >전체</a></li>
+                <li><a href="javascript:void(0)" onclick="tab(1)">증정품목</a></li>
+                <li><a href="javascript:void(0)" onclick="tab(2)">일반활동</a></li>
+            </ul>
+			<div class="tab-con" style="display:block">
+            	<div class="search-box">
+	            	<input type="text" value="" placeholder="품목검색"/>
+					<button type="button" class="btn gray middle">검색</button>
+	            </div>
+	            <div class="result-box">
+	            	<table class="table-st1">
+	            		<colgroup>
+	            			<col />
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            		</colgroup>
+	            		<thead>
+	            			<tr>
+	            				<th></th>
+	            				<th scope="row">활동명</th>
+	            				<th scope="row">활동횟수</th>
+	            				<th scope="row">기타</th>
+	            			</tr>
+	            		</thead>
+	            		<tbody>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-01">
+			                            <label for="list01-01"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td>BA,CT</td>
+		            			<td class="right">85</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-02">
+			                            <label for="list01-02"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-03">
+			                            <label for="list01-03"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-04">
+			                            <label for="list01-04"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-05">
+			                            <label for="list01-05"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-06">
+			                            <label for="list01-06"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list01-07">
+			                            <label for="list01-07"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            		</tbody>
+	            	</table>
+	            </div>
+            </div>
+            <div class="tab-con">
+            	<div class="search-box">
+	            	<input type="text" value="" placeholder="품목검색"/>
+					<button type="button" class="btn gray middle">검색</button>
+	            </div>
+	            <div class="result-box">
+	            	<table class="table-st1">
+	            		<colgroup>
+	            			<col />
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            		</colgroup>
+	            		<thead>
+	            			<tr>
+	            				<th></th>
+	            				<th scope="row">활동명</th>
+	            				<th scope="row">활동횟수</th>
+	            				<th scope="row">기타</th>
+	            			</tr>
+	            		</thead>
+	            		<tbody>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-01">
+			                            <label for="list02-01"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td>BA,CT</td>
+		            			<td class="right">85</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-02">
+			                            <label for="list02-02"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-03">
+			                            <label for="list02-03"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-04">
+			                            <label for="list02-04"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-05">
+			                            <label for="list02-05"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-06">
+			                            <label for="list02-06"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list02-07">
+			                            <label for="list02-07"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            		</tbody>
+	            	</table>
+	            </div>
+            </div>
+            <div class="tab-con">
+            	<div class="search-box">
+	            	<input type="text" value="" placeholder="품목검색"/>
+					<button type="button" class="btn gray middle">검색</button>
+	            </div>
+	            <div class="result-box">
+	            	<table class="table-st1">
+	            		<colgroup>
+	            			<col />
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            			<col style="width:29%"/>
+	            		</colgroup>
+	            		<thead>
+	            			<tr>
+	            				<th></th>
+	            				<th scope="row">활동명</th>
+	            				<th scope="row">활동횟수</th>
+	            				<th scope="row">기타</th>
+	            			</tr>
+	            		</thead>
+	            		<tbody>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-01">
+			                            <label for="list03-01"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td>BA,CT</td>
+		            			<td class="right">85</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-02">
+			                            <label for="list03-02"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-03">
+			                            <label for="list03-03"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-04">
+			                            <label for="list03-04"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-05">
+			                            <label for="list03-05"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-06">
+			                            <label for="list03-06"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            			
+	            			<tr>
+		            			<td>
+			            			 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="list03-07">
+			                            <label for="list03-07"><span class="hidden">제품</span></label>
+			                        </span>
+		            			</td>
+		            			<td></td>
+		            			<td class="right">0</td>
+		            			<td></td>
+	            			</tr>
+	            		</tbody>
+	            	</table>
+	            </div>
+            </div>
+        </div>
+        <div class="pop-btn">
+            <button type="button" class="btn red gradient long w90">등록</button>
+        </div>
+    </div>
+</div>
+<!--//    popup -->
+            </main>
+        </section>
+    </section>
+ 
+</body>
+</html>
