@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+
+<body class="guide">
+  <section class="wrapper">
+
+    <section class="contents">
+
+      <main class="sub-main">
+        <h1>고객관리</h1>
+        <div class="sub-contents csForm">
+
+          <div class="table-wrap">
+            <div class="sub-title" id="table">
+              <h3>고객정보</h3>
+            </div>
+
+            <table class="table-st2" title="고객정보">
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 35%">
+                <col style="width: 15%">
+                <col style="width: 35%">
+              </colgroup>
+              <tr>
+                <th>담당영업소</th>
+                <td>서울강남지점</td>
+                <th>영업지원담당자</th>
+                <td>김강남</td>
+              </tr>
+              <tr>
+                <th>기술지원소</th>
+                <td>서울남부파트</td>
+                <th>기술지원담당자</th>
+                <td>이길동</td>
+              </tr>
+              <tr>
+                <th>거래처명</th>
+                <td>포인트치과(A123456)</td>
+                <th>대표자명</th>
+                <td>홍길동</td>
+              </tr>
+             <tr>
+                <th>출신학교</th>
+                <td>조선대학교</td>
+                <th>대표자 면허번호</th>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <th>전공</th>
+                <td>치의학과</td>
+                <th>졸업년도</th>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <th>주소</th>
+                <td>서울특별시 구로구 구로동 212-1</td>
+                <th>사업자번호</th>
+                <td>123-45-67890</td>
+              </tr>
+              <tr>
+                <th scope="col">전화번호</th>
+                <td>02-123-4567</td>
+                <th scope="col">휴대전화</th>
+                <td>010-1234-5678</td>
+              </tr>
+            </table>
+            <div class="btn-wrap">
+            	<button type="button" class="btn black gradient middle">수정</button>
+            	<button type="button" class="btn red gradient middle">저장</button>
+            	<button type="button" class="btn gray gradient middle">취소</button>
+            </div>
+          </div>
+
+
+          <div class="table-wrap">
+            <div class="sub-title" id="table">
+              <h3>특이사항</h3>
+            </div>
+
+            <table class="table-st2 cs-table" title="특이사항">
+              <colgroup>
+                <col>
+                <col style="width: 30%">
+                <col style="width: 60%">
+              </colgroup>
+              <tr>
+                <th scope="col">거래처</th>
+                <th scope="col">작성자</th>
+                <th scope="col">내용</th>
+              </tr>
+             <tr>
+             	<td>2020-03-15</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+             <tr>
+             	<td>2020-03-15</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+             <tr>
+             	<td>
+             		<div class="select-box select-group">
+	                    <select name="" id="">
+	                      <option value="">2020-04-12</option>
+	                      <option value=""></option>
+	                    </select>
+                  	</div>
+             	</td>
+             	<td>서울남부파트/이길동</td>
+             	<td>SUCTION TIP, ARGYLE 모노젝트 불량으로 반품접수</td>
+             </tr>
+             
+            </table>
+            <div class="btn-wrap">
+            	<div class="btn-left">
+            		<button type="button" class="btn ico plus">추가</button>
+            		<button type="button" class="btn ico minus">삭제</button>
+            	</div>
+            	<button type="button" class="btn red gradient middle">저장</button>
+            	<button type="button" class="btn gray gradient middle">취소</button>
+            </div>
+
+          </div>
+          
+          
+			<ul class="tab-st1">
+                <li><a href="#">패키지현황</a></li>
+                <li class="on"><a href="#">일반장비 보유/출고현황</a></li>
+                <li><a href="#">AS원격일지(전화상담)</a></li>
+                <li><a href="#">AS방문일지</a></li>
+                <li><a href="#">미수금내역</a></li>
+                <li><a href="#">영업일지</a></li>
+                <li><a href="#">영업활동현황(프로모션)</a></li>
+                <li><a href="#">VOC등록현황</a></li>
+                <li><a href="#">설문조사현황</a></li>
+            </ul>
+                    
+                    
+          <div class="table-wrap">
+            <div class="sub-title" id="table">
+              <h3>일반장비 보유현황</h3>
+            </div>
+            <table class="table-st2" title="일반장비보유현황">
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 85%">
+              </colgroup>
+              <tr>
+                <th scope="col">체어</th>
+                 <td>
+                 	<div class="select-box w250">
+                 	<input type="text" placeholder="">
+                 	</div>
+                 	<span>대</span>
+                 </td>
+              </tr>
+              <tr>
+                <th colspan="2" style="text-align: center;">품목명</th>
+              </tr>
+              <tr>
+                 <td colspan="2">
+                 	<input type="text" placeholder="W-1230">
+                 </td>
+              </tr>
+
+            </table>
+            <div class="btn-wrap">
+            	<div class="btn-left">
+            		<button type="button" class="btn ico plus">추가</button>
+            		<button type="button" class="btn ico minus">삭제</button>
+            	</div>
+            </div>
+            
+            
+            
+            <table class="table-st2" title="일반장비보유현황">
+              <colgroup>
+                <col style="width: 15%">
+                <col style="width: 85%">
+              </colgroup>
+              <tr>
+                <th scope="col">파노라마</th>
+                 <td>
+                 	<div class="select-box w250">
+                 	<input type="text" placeholder="">
+                 	</div>
+                 	<span>대</span>
+                 </td>
+              </tr>
+              <tr>
+                <th colspan="2" style="text-align: center;">품목명</th>
+              </tr>
+              <tr>
+                 <td colspan="2">
+                 	<input type="text" placeholder="W-1230">
+                 </td>
+              </tr>
+
+            </table>
+            <div class="btn-wrap">
+            	<div class="btn-left">
+            		<button type="button" class="btn ico plus">추가</button>
+            		<button type="button" class="btn ico minus">삭제</button>
+            	</div>
+            </div>
+            
+            
+          </div><!-- //table-wrap -->
+
+
+			<table class="table-st4" title="일반장비 출고현황">
+              	<colgroup>
+					<col style="width: 4%">
+					<col style="width: 4.5%">
+					<col style="width: 9%">
+					<col style="width: 8%">
+					<col style="width: 10%">
+					<col style="width: 3.5%">
+					<col style="width: 8%">
+					<col style="width: 5%">
+					<col style="width: 8%">
+					<col style="width: 8%">
+					<col style="width: 5%">
+					<col style="width: 8%">
+					<col style="width: 8%">
+					<col style="width: 6%">
+					<col style="width: 5%">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>사업장</th>
+						<th>수주일자</th>
+						<th>품목코드</th>
+						<th>품목명</th>
+						<th>수량</th>
+						<th>거래처명</th>
+						<th>출고<br>현황</th>
+						<th>출고승인일</th>
+						<th>출하완료일</th>
+						<th>입고<br>구분</th>
+						<th>입고확인일</th>
+						<th>입고완료일</th>
+						<th>제품<br>제조번호</th>
+						<th>담당자</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td>2020-03-20</td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>본사</td>
+						<td>2020-03-20</td>
+						<td>A789456</td>
+						<td>LG모니터24'</td>
+						<td>1</td>
+						<td>포인트치과</td>
+						<td>전송</td>
+						<td></td>
+						<td></td>
+						<td>미대상</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>홍길동</td>
+					</tr>
+				</tbody>
+            </table>
+            <div class="pager-center">
+            	<div class="pager">
+           			<ol>
+           				<li class="on"><strong>1</strong></li>
+           				<li><a href="/">2</a></li>
+           				<li><a href="/">3</a></li>
+           				<li><a href="/">4</a></li>
+           				<li><a href="/">5</a></li>
+           				<li><a href="/">6</a></li>
+           				<li><a href="/">7</a></li>
+           				<li><a href="/">8</a></li>
+           				<li><a href="/">9</a></li>
+           			</ol>
+           			<button type="button" class="btn btn-next">다음</button>
+           		</div>
+            </div>
+			
+        </div>
+      </main>
+    </section>
+  </section>
+
+</body>
+
+</html>

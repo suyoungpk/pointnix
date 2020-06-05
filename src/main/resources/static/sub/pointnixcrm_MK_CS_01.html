@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+ 		<section class="contents">
+            <main class="sub-main">
+                <h1>시장조사</h1>
+                <div class="sub-contents asStatement">
+                  <h2 class="hidden">시장조사</h2>
+                  <div class="fixed-box">
+                  	<h3>조사결과</h3>
+                  	<form action="">
+	                  	<table class="table-st2" title="조사결과조회">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">조사일시</th>
+								<td colspan="3" class="date">
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">시작일</option>
+										</select>
+									</div>	
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>
+									<span>-</span>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>							
+									<button type="button" class="btn light on">최근 1주일</button>
+									<button type="button" class="btn light">1개월</button>
+									<button type="button" class="btn light">2개월</button>
+									<button type="button" class="btn light">3개월</button>
+								</td>					
+							</tr>
+							<tr>
+								<th scope="col">고객조사제목</th>
+								<td>
+									<input type="text" placeholder="조사제목 입력" />
+								</td>
+								<th scope="col">진행상태</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">품목명</th>
+								<td>
+									<input type="text" placeholder="품목명 입력" />
+								</td>
+								<th scope="col">담당PM</th>
+								<td>
+									<input type="text" placeholder="담당PM 입력" />
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">주제</th>
+								<td colspan="3">
+									<span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject01">
+			                            <label for="subject01">전체</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject02">
+			                            <label for="subject02">만족도</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject03">
+			                            <label for="subject03">사용현황</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject04">
+			                            <label for="subject04">인지도</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject05">
+			                            <label for="subject05">품질평가</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject06">
+			                            <label for="subject06">타사정보</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject07">
+			                            <label for="subject07">기타</label>
+			                        </span>
+								</td>
+							</tr>
+						</table>
+						<div class="btn-box right">
+							<button class="btn blue gradient btn-srch">검색</button>
+						</div>
+	                  </form>
+                  </div><!-- // fixed-box -->
+                  <div class="result-box">
+                  	<div class="total">
+                  		<div class="right">
+                  			<button class="btn gray gradient long">고객조사 등록</button>
+                  		</div>
+                  	</div>
+					<div class="box-container">
+					<table class="table-st4">
+                  		<colgroup>
+							<col style="width: 5.2%">
+							<col style="width: 9.4%">
+							<col style="width: 9.4%">
+							<col style="width: 23%">
+							<col style="width: 17.8%">
+							<col>
+							<col style="width: 8%">
+							<col style="width: 9%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>번호</th>
+								<th>조사시작일</th>
+								<th>조사종료일</th>
+								<th>고객조사제목</th>
+								<th>주제</th>
+								<th>품목명</th>
+								<th>담당PM</th>
+								<th>진행상태</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+									<!-- <span class="ico ico-txt black big">조사대기</span> -->
+									<!-- <span class="ico ico-txt orange big">미진행</span> -->
+									<!-- <span class="ico ico-txt blue big">조사진행</span> -->
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt black big">조사대기</span>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt blue big">조사진행</span>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt orange big">미진행</span>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>2020-03-20</td>
+								<td>2020-03-20</td>
+								<td class="left"><p class="txt">디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 디지털 가이드 사용 설문 조사 </p></td>
+								<td>만족도/ 사용현황/ 인지도</td>
+								<td class="left">디지털/CAD/CAM/솔루션/디지털 가이드 Kit </td>
+								<td>김영준</td>
+								<td>
+									<span class="ico ico-txt gray big">조사완료</span>
+								</td>
+							</tr>
+						</tbody>
+                  	</table>
+					</div>
+                  	<div class="btn-box">
+                  		<div class="pager">
+                  			<button type="button" class="btn btn-prev">이전</button>
+                  			<ol>
+                  				<li class="on"><strong>1</strong></li>
+                  				<li><a href="/">2</a></li>
+                  				<li><a href="/">3</a></li>
+                  				<li><a href="/">4</a></li>
+                  				<li><a href="/">5</a></li>
+                  				<li><a href="/">6</a></li>
+                  				<li><a href="/">7</a></li>
+                  				<li><a href="/">8</a></li>
+                  				<li><a href="/">9</a></li>
+                  			</ol>
+                  			<button type="button" class="btn btn-next">다음</button>
+                  		</div>
+                  		<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+                  	</div>
+                  </div><!-- // result-box -->
+                </div><!-- // sub-contents -->
+            </main>
+    </section>
+ </section>
+</body>
+</html>

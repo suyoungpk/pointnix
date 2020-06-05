@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+ 		<section class="contents">
+            <main class="sub-main">
+                <h1>VOC</h1>
+                <div class="sub-contents orderStatement vocState2">
+                  <h2 class="hidden">VOC</h2>
+                  <div class="fixed-box">
+                  	<form action="" name="frm">
+	                  	<div class="title-wrap">
+	               			<h2>접수등록</h2>
+	               		</div>
+                  	 	<div class="fixed-box">
+	                  	<table class="table-st2" title="접수 등록">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">접수파트</th>
+								<td colspan="3">
+									AS20200307
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">거래처명</th>
+								<td>
+									<div class="form-ui srch-box">
+		                                <input type="text" placeholder="검색">
+		                                <button type="button" class="btn srch">검색하기</button>
+		                            </div>
+								</td>
+								<th scope="col">접수구분</th>
+								<td>
+									<span class="form-ui radio-box">
+			                            <input type="radio" name="apply" id="apply01">
+			                            <label for="apply01">불만</label>
+			                        </span>
+			                        <span class="form-ui radio-box">
+			                            <input type="radio" name="apply" id="apply02">
+			                            <label for="apply02">제안</label>
+			                        </span>
+			                         <span class="form-ui radio-box">
+			                            <input type="radio" name="apply" id="apply03">
+			                            <label for="apply03">문의</label>
+			                        </span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">분류</th>
+								<td colspan="3">
+									<div class="select-box w250">
+										<select name="" id="">
+											<option value="">대분류</option>
+										</select>
+									</div>
+									<div class="select-box w221">
+										<select name="" id="">
+											<option value="">중분류</option>
+										</select>
+									</div>
+									<div class="select-box w176">
+										<select name="" id="">
+											<option value="">소분류1</option>
+										</select>
+									</div>
+									<div class="select-box w176">
+										<select name="" id="">
+											<option value="">소분류2</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">내용<br>(고장 증상 등)</th>
+								<td colspan="3">
+									<textarea name="" id="" cols="30" rows="10" placeholder="내용을 입력해주세요.">
+									</textarea>
+								</td>
+							</tr>
+						</table>
+						<div class="addedFile">
+							<dl>
+								<dt>첨부파일</dt>
+								<dd>
+									<table class="table-st1">
+										<colgroup>
+											<col style="width:6%"/>
+											<col />
+											<col style="width:10%" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th>
+													<span class="form-ui chk-box">
+						                              	<input type="checkbox" name="allchk" id="allchk" onchange="check_all(this,'frm','chk')">
+						                               <label for="allchk"></label>
+					                          	 	</span>	
+												</th>
+												<th>파일명</th>
+												<th>크기</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>
+													<span class="form-ui chk-box">
+								                          <input type="checkbox" name="chk" id="chk01-01">
+								                          <label for="chk01-01"></label>
+								                      </span>
+												</td>
+												<td>포인트치과 홍길동 원장님 주문의뢰현황2.jpg</td>
+												<td>2.5MB</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="form-ui chk-box">
+								                          <input type="checkbox" name="chk" id="chk01-02">
+								                          <label for="chk01-02"></label>
+								                      </span>
+												</td>
+												<td>포인트치과 홍길동 원장님 주문의뢰현황2.jpg</td>
+												<td>2.5MB</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="btn-box right">
+										<button type="button" class="btn black middle">첨부파일</button>
+										<button type="button" class="btn light middle w50">삭제</button>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="btn-box">
+                  		<button type="button" class="btn red gradient long w90">등록</button>
+                  		<button type="button" class="btn gray gradient long w90">취소</button>
+                  	</div>
+                	</form>
+                </div><!-- // sub-contents -->
+            </main>
+    </section>
+ </section>
+</body>
+</html>

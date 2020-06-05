@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+       <!--  header -->
+        <section class="contents">
+           <!--  aside -->
+            <main class="sub-main">
+                <h1>전자장부</h1>
+                <div class="sub-contents orderStatement business">  
+                  <h2 class="hidden">전자장부 계약 조회</h2>                
+                  <div class="fixed-box">
+                  	<form action="">
+                  		<h3>
+                  			계약내용조회
+                  			<div class="select-box">
+								<select name="" id="" disabled>
+									<option value="" >포인트치과(A23456)</option>
+								</select>
+							</div>
+                  		</h3>
+	                  	<table class="table-st2" title="계약내용 조회">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">거래처</th>
+								<td colspan="3" class="colspan">
+									<div class="select-box hasmaxwidth">
+										<select name="" id="">
+											<option value="" >포인트치과2</option>
+											<option value="" >직접입력</option>
+										</select>
+									</div>
+									<input type="text" value="" placeholer="거래처명 입력" class="hasmaxwidth">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">계약일자</th>
+								<td class="date" colspan="3">
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>
+									<span>-</span>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>							
+									<button type="button" class="btn light on">최근 1주일</button>
+									<button type="button" class="btn light">1개월</button>
+									<button type="button" class="btn light">2개월</button>
+									<button type="button" class="btn light">3개월</button>
+								</td>					
+							</tr>
+							<tr>
+								<th scope="col">패키지 계약 번호</th>
+								<td>
+									<input type="text" value="" placeholer="패키지 계약 번호 입력">
+								</td>
+								<th scope="col">계약상태</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<div class="btn-box right">
+							<button class="btn blue gradient btn-srch">검색</button>
+						</div>
+	                  </form>
+                  </div><!-- // fixed-box -->
+                  <div class="result-box">
+                  	<h3>고객계약상세내역</h3>
+                  	<div class="box-container">
+                  		<table class="table-st4" title="고객계약상세내역">
+	                  		<colgroup>
+								<col style="width: 10.4%">
+								<col style="width: 9.8%">
+								<col >
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 12%">
+								<col style="width: 7.5%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>수주일자</th>
+									<th>패키지<br>계약번호</th>
+									<th>계약조건</th>
+									<th>계약금액<br><span>(세금계산서 발행액)</span></th>
+									<th>출고가능액</th>
+									<th>사용 금액</th>
+									<th>잔액</th>
+									<th>계약상태</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2020-03-20</td>
+									<td>IP-70AM</td>
+									<td class="blue">복합PKG제품(SA)-할인율65.5%</td>
+									<td class="right">-</td>
+									<td class="right">-</td>
+									<td class="right">-6,300</td>
+									<td class="right">-6,300</td>
+									<td class="">할인</td>
+								</tr>
+								<tr>
+									<td>2020-03-20</td>
+									<td>IP-70AM</td>
+									<td class="blue">복합PKG제품(SA)-할인율65.5%</td>
+									<td class="right">-</td>
+									<td class="right">-</td>
+									<td class="right">-</td>
+									<td class="right">-</td>
+									<td class="">완료</td>
+								</tr>
+								<tr>
+									<td>2020-03-20</td>
+									<td>IP-70AM</td>
+									<td class="blue">복합PKG제품(SA)-할인율65.5%</td>
+									<td class="red right">5,000,000</td>
+									<td class="red right">5,000,000</td>
+									<td class="red right">5,000,000</td>
+									<td class="red right">5,000,000</td>
+									<td class="red ">취소</td>
+								</tr>
+							</tbody>
+	                  	</table>
+                  	</div>
+                  	<div class="btn-box">
+                  		<div class="left">
+	                  		<table class="table-st2">
+	                  				<colgroup>
+									<col style="width: 16%">
+									<col style="width: 17%">
+									<col style="width: 16%">
+									<col style="width: 17%">
+									<col style="width: 16%">
+									<col>
+								</colgroup>
+								
+								<tr>
+									<th scope="col">총 출고가능액</th>
+									<td>
+										3,713,000
+									</td>
+									<th scope="col">총 사용 금액</th>
+									<td>
+										3,713,000
+									</td>	
+									<th scope="col">총 잔액</th>
+									<td>
+										3,713,000
+									</td>					
+								</tr>
+	                  		</table>
+                  		</div>
+                  		<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+                  	</div>
+                  </div><!-- // result-box -->
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+</body>
+</html>

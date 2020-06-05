@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- CSS -->
+	<link th:href="@{/css/custom.css}" rel="stylesheet">
+	<link th:href="@{/css/jquery-ui.css}" rel="stylesheet">
+	
+	<!-- 컨텐츠 페이지 CSS 삽입 -->
+	<th:block layout:fragment="customCss"></th:block>
+	
+	<script th:src="@{/js/jquery-3.4.1.min.js}"></script>
+	<script th:src="@{/js/jquery-ui.min.js}"></script>
+	<script th:src="@{/js/common.js}"></script>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+ 		<section class="contents">
+            <main class="sub-main">
+                <h1>주문 현황</h1>
+                <div class="sub-contents orderStatement">
+                  <div class="fixed-box">
+                  	<form action="">
+	                  	<table class="table-st2" title="주문현황입력">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 35%">
+								<col style="width: 15%">
+								<col style="width: 35%">
+							</colgroup>
+							<tr>
+								<th scope="col">주문일자</th>
+								<td class="date" colspan="3">
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>
+									<span>-</span>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>							
+									<button type="button" class="btn light on">최근 1주일</button>
+									<button type="button" class="btn light">1개월</button>
+									<button type="button" class="btn light">2개월</button>
+									<button type="button" class="btn light">3개월</button>
+								</td>					
+							</tr>
+							<tr>
+								<th scope="col">담당영업소</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="" disabled>
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+								<th scope="col">담당자</th>
+								<td>
+									<input type="text" value="" placeholer="담당자명 입력">
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">배송구분</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="" >퀵서비스</option>
+										</select>
+									</div>
+								</td>
+								<th scope="col">출고현황</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="" disabled>
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">거래처</th>
+								<td>
+									<input type="text" value="" placeholer="거래처명 입력">
+								</td>
+								<th scope="col">주문번호</th>
+								<td>
+									<input type="text" value="" placeholer="주문번호 입력">
+								</td>
+							</tr>
+						</table>
+						<div class="btn-box right">
+							<button class="btn blue gradient btn-srch">검색</button>
+						</div>
+	                  </form>
+                  </div><!-- // fixed-box -->
+                  <div class="result-box">
+                  	<div class="total">
+                  		<div class="left">
+                  		전체 150건 / 조회 <em>100</em>건
+                  		</div>
+                  		<div class="right">
+                  			<table class="table-st2">
+                  				<colgroup>
+								<col style="width: 16%">
+								<col style="width: 17%">
+								<col style="width: 16%">
+								<col style="width: 17%">
+								<col style="width: 16%">
+								<col>
+							</colgroup>
+							<tr>
+								<th scope="col">총 전송건수</th>
+								<td>
+									50
+								</td>
+								<th scope="col">총 승인건수</th>
+								<td>
+									50
+								</td>	
+								<th scope="col">총 출고건수</th>
+								<td>
+									50
+								</td>					
+							</tr>
+                  			</table>
+                  		</div>	
+                  	</div>
+                  	<table class="table-st4">
+                  		<colgroup>
+							<col style="width: 4.8%">
+							<col style="width: 7.9%">
+							<col style="width: 9.9%">
+							<col style="width: 9.9%">
+							<col style="width: 13.9%">
+							<col style="width: 11.9%">
+							<col style="width: 7.9%">
+							<col style="width: 10.9%">
+							<col style="width: 7.9%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>출고현황</th>
+								<th>주문번호</th>
+								<th>주문일자</th>
+								<th>거래처</th>
+								<th>영업소</th>
+								<th>담당자</th>
+								<th>배송구분</th>
+								<th>수취인</th>
+								<th>비고</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr><tr>
+								<td>10</td>
+								<td>전송</td>
+								<td>200302020</td>
+								<td>2020-03-20</td>
+								<td>행복치과</td>
+								<td>서울강남지점</td>
+								<td>김강남</td>
+								<td>택배</td>
+								<td>홍유리</td>
+								<td></td>
+							</tr>
+						</tbody>
+                  	</table>
+                  	<div class="btn-box">
+                  		<div class="pager">
+                  			<button type="button" class="btn btn-prev">이전</button>
+                  			<ol>
+                  				<li class="on"><strong>1</strong></li>
+                  				<li><a href="/">2</a></li>
+                  				<li><a href="/">3</a></li>
+                  				<li><a href="/">4</a></li>
+                  				<li><a href="/">5</a></li>
+                  				<li><a href="/">6</a></li>
+                  				<li><a href="/">7</a></li>
+                  				<li><a href="/">8</a></li>
+                  				<li><a href="/">9</a></li>
+                  			</ol>
+                  			<button type="button" class="btn btn-next">다음</button>
+                  		</div>
+                  		<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+                  	</div>
+                  </div><!-- // result-box -->
+                </div><!-- // sub-contents -->
+            </main>
+    </section>
+ </section>
+</body>
+</html>

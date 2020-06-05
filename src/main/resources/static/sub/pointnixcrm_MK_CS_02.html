@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+       
+        <section class="contents">
+            
+            <main class="sub-main">
+                <h1>시장조사</h1>
+                <div class="sub-contents pollRegister">  
+                  <h2 class="hidden">시장조사</h2>
+                  <form action="">     
+                 	<div class="fixed-box">
+                 		<h3>고객조사등록</h3>
+                 		<table class="table-st2">
+                 			<colgroup>
+                 				<col style="width:15%">
+                 				<col style="width:35%">
+                 				<col style="width:15%">
+                 				<col style="width:35%">
+                 			</colgroup>
+                 			<tr>
+                 				<th scope="col">거래처명</th>
+                 				<td>
+                 					 <div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="" >2020-04-12</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+                 				</td>
+                 				<th scope="col">조사 종료일</th>
+                 				<td>
+                 					 <div class="form-ui select-box">
+			                            <select name="" id="">
+			                                <option value="" >2020-04-19</option>
+			                                <option value="">옵션1</option>
+			                            </select>
+			                        </div>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<th scope="col">거래처명</th>
+                 				<td>
+                 					<input type="text" placeholder="조사제목 입력" />
+                 				</td>
+                 				<th scope="col">담당PM</th>
+                 				<td>
+                 					 <input type="text" placeholder="담당PM 입력" />
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<th scope="col">품목명</th>
+                 				<td colspan="3">
+                 					<div class="form-ui srch-box">
+		                                <input type="text">
+		                                <button type="button" class="btn srch">검색하기</button>
+		                            </div>
+		                            <button type="button" class="btn gray middle btn-add">추가</button>
+		                            <ul class="added-list">
+		                            	<li>
+		                            		 <button type="button" class="btn ico del">삭제</button>
+		                            		 Fixture 
+		                            	</li>
+		                            	<li>
+		                            		 <button type="button" class="btn ico del">삭제</button>
+		                            		 Fixture 
+		                            	</li>
+		                            	<li>
+		                            		 <button type="button" class="btn ico del">삭제</button>
+		                            		 Fixture 
+		                            	</li>
+		                            </ul>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<th scope="col">주제</th>
+                 				<td colspan="3">
+                 					 <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject01">
+			                            <label for="subject01">만족도</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject02">
+			                            <label for="subject02">사용현황</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject03">
+			                            <label for="subject03">인지도</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject04">
+			                            <label for="subject04">품질평가</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject05">
+			                            <label for="subject05">타사정보</label>
+			                        </span>
+			                        <span class="form-ui chk-box">
+			                            <input type="checkbox" name="" id="subject06">
+			                            <label for="subject06">기타</label>
+			                        </span>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<th scope="col">조사 안내</th>
+                 				<td colspan="3">
+                 					<textarea name="" id="" cols="30" rows="10" placeholder="1000Byte까지 작성가능"></textarea>
+                 				</td>
+                 			</tr>
+                 		</table>
+                 	</div><!--// fixed-box -->
+                 	<div class="fixed-box" id="questionList">
+                 		<div class="btn-box right">
+                 			<button type="button" class="btn black middle btn-quest-add" onclick="addQuestion()">조사질문사항 추가</button>
+                 			<button type="button" class="btn gray middle btn-quest-add" onclick="removeQuestion()">조사질문사항 삭제</button>
+                 		</div>
+                 		<div class="questionBox">
+                 			<table class="table-st2">
+	                 			<colgroup>
+	                 				<col style="width:15%">
+	                 				<col style="width:49%">
+	                 				<col style="width:15%">
+	                 				<col style="width:21%">
+	                 			</colgroup>
+	                 			<tr>
+	                 				<th scope="col">조사질문</th>
+	                 				<td>
+	                 					<input type="text" value="" placeholder="예) 주 52시간 근무제도는 잘 지켜지고 있습니까?"/>
+	                 				</td>
+	                 				<th scope="col">조사구분</th>
+	                 				<td>
+	                 					 <div class="form-ui select-box select-type">
+				                            <select name="" id=""  onchange="chgType(this)">
+				                               	<option value="single" selected>객관식 입력(단일)</option>
+				                                <option value="multi">객관식 입력(중복)</option>
+				                                <option value="direct">주관식입력</option>
+				                            </select>
+				                        </div>
+	                 				</td>
+	                 			</tr>
+	                 			<tr>
+	                 				<th scope="col">응답</th>
+	                 				<td colspan="3" class="pad0">
+	                 					<ul class="answer-list">
+	                 						<li>
+	                 							<span class="form-ui radio-box">
+						                            <input type="radio" name="" id="" disabled>
+						                            <label for=""></label>
+						                        </span>
+						                        <input type="text" value="" name="q0-answer00" class="input-answer"/>
+	                 						</li>
+	                 					</ul>
+	                 				</td>
+	                 			</tr>
+	                 		</table>
+	                 		<div class="btn-box right">
+	                 			<button type="button" class="btn ico plus btn-answer-add" onclick="addList(this)">추가</button>
+	                        	<button type="button" class="btn ico minus btn-answer-remove" onclick="removeList(this)">삭제</button>
+	                 		</div>
+                 		</div><!--// questionBox -->
+                 	</div><!--// fixed-box -->
+               		<div class="btn-box">
+                 		<button type="button" class="btn red gradient long w90">등록</button>
+                 		<button type="button" class="btn gray gradient long w90" onclick="confirm('취소하시겠습니까?')">취소</button>
+                 	</div><!--// btn-box -->
+                   </form>
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+                		<template id="questionBox">
+                 			<div class="questionBox">
+	                 			<table class="table-st2">
+		                 			<colgroup>
+		                 				<col style="width:15%">
+		                 				<col style="width:49%">
+		                 				<col style="width:15%">
+		                 				<col style="width:21%">
+		                 			</colgroup>
+		                 			<tr>
+		                 				<th scope="col">조사질문</th>
+		                 				<td>
+		                 					<input type="text" value="" placeholder="예) 주 52시간 근무제도는 잘 지켜지고 있습니까?"/>
+		                 				</td>
+		                 				<th scope="col">조사구분</th>
+		                 				<td>
+		                 					 <div class="form-ui select-box select-type">
+					                            <select name="" id="" onchange="chgType(this)">
+					                               	<option value="single" selected>객관식 입력(단일)</option>
+					                                <option value="multi">객관식 입력(중복)</option>
+					                                <option value="direct">주관식입력</option>
+					                            </select>
+					                        </div>
+		                 				</td>
+		                 			</tr>
+		                 			<tr>
+		                 				<th scope="col">응답</th>
+		                 				<td colspan="3" class="pad0">
+		                 					<ul class="answer-list">
+		                 						<li>
+		                 							<span class="form-ui radio-box">
+							                            <input type="radio" name="" id="" disabled>
+							                            <label for=""></label>
+							                        </span>
+							                        <input type="text" value="" class="input-answer"/>
+		                 						</li>
+		                 					</ul>
+		                 				</td>
+		                 			</tr>
+		                 		</table>
+		                 		<div class="btn-box right">
+		                 			<button type="button" class="btn ico plus btn-answer-add" onclick="addList(this)">추가</button>
+	                        		<button type="button" class="btn ico minus btn-answer-remove" onclick="removeList(this)">삭제</button>
+		                 		</div>
+	                 		</div><!--// questionBox -->
+                 		</template>
+                 		<template id="questionType01">
+                 			<li>
+       							<span class="form-ui radio-box">
+                       				<input type="radio" name="" id="" disabled>
+                       				<label for=""></label>
+                   				</span>
+                   				<input type="text" value="" class="input-answer">
+           					</li>
+                 		</template>
+                 		<template id="questionType02">
+                 			<li>
+       							<span class="form-ui chk-box">
+                       				<input type="checkbox" name="" id="" disabled>
+                      				<label for=""></label>
+                   				</span>
+                   				<input type="text" value="" class="input-answer">
+       						</li>
+                 		</template>
+                 		<template id="questionType03">
+                 			<li>
+		                        <input type="text" value=""  class="text-box input-answer" readonly>
+	             			</li>
+                 		</template>
+   <script>
+    function chgType(e){
+    	var type=e.options[e.selectedIndex].value;
+    	e.value = type;
+    	var selectArray=document.querySelectorAll('.select-type');
+    	for(var i=0;i<selectArray.length;i++)
+    		if(selectArray[i] == e.parentElement){
+    			var t;
+    			var list = document.querySelectorAll('#questionList .questionBox')[i].querySelector(".answer-list");
+    			list.innerHTML="";
+    			switch(type){
+    			case "single": 
+    				t = document.querySelector('#questionType01 > li');
+    				break;
+    			case "multi": 
+    				t = document.querySelector('#questionType02 > li');
+    				break;
+    			case "direct": 
+    				t = document.querySelector('#questionType03 > li');
+    				break;
+    			}
+    			var clone = t.cloneNode(true);
+    			// 답변 인풋박스  이름 생성하는 곳 
+    			clone.querySelector(".input-answer").name = "q"+i+"-answer00";
+				list.appendChild(clone);
+    			return false;
+    		}
+    }
+    function addList(e){
+    	var btnArray=document.querySelectorAll('.btn-answer-add');
+    	for(var i=0;i<btnArray.length;i++)
+    		if(btnArray[i] == e){
+    			var list = document.querySelectorAll('#questionList .questionBox')[i].querySelector(".answer-list");
+    			if(list.children.length>3){
+    				alert("답변은 최대 4개까지 가능합니다.");
+    				return false;
+    			}
+    			
+    			var clone = list.children[0].cloneNode(true);
+    			// 답변 인풋박스  이름 생성하는 곳 
+    			clone.querySelector(".input-answer").name = "q"+i+"-answer0"+ (list.children.length);
+    			clone.querySelector(".input-answer").value="";
+				list.appendChild(clone);
+    			return false;
+    		}
+    	
+    }
+    function removeList(e){
+    	var btnArray=document.querySelectorAll('.btn-answer-remove');
+    	for(var i=0;i<btnArray.length;i++)
+    		if(btnArray[i] == e){
+    			var list = document.querySelectorAll('#questionList .questionBox')[i].querySelector(".answer-list");
+    			if(list.children.length<2){
+    				alert("더 이상 삭제가 불가능합니다.");
+    				return false;
+    			}
+    			list.removeChild(list.children[list.children.length-1])
+    			return false;
+    		}
+    }
+   	function addQuestion(){
+   		var t = document.querySelector('#questionBox').content || document.querySelector('#questionBox').children[0];
+   		var list = document.querySelector('#questionList');
+   		//var clone = document.importNode(t.content, true);
+   		var clone = t.cloneNode(true);
+   		// 답변 인풋박스  이름 생성하는 곳 
+   		clone.querySelector(".input-answer").name = "q"+(document.querySelectorAll('#questionList .questionBox').length)+"-answer00";
+   		list.appendChild(clone);
+   	}
+	function removeQuestion(){
+		var qList = document.querySelectorAll('#questionList .questionBox');
+		if(qList.length<2){
+			alert("더 이상 삭제가 불가능합니다.");
+			return false;
+		}
+		document.querySelector('#questionList').removeChild(qList[qList.length-1]);
+   	}
+   </script>
+</body>
+</html>

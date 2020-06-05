@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title layout:title-pattern="$LAYOUT_TITLE : $CONTENT_TITLE">TITLE</title>
+	<th:block th:replace="fragments/header"></th:block>
+</head>
+<body>
+	<!--  -->
+	<div th:replace="fragments/navigation :: cloud_navi"></div>
+	<!--  -->
+	<th:block layout:fragment="content"></th:block>
+	<!--  -->
+	<footer th:replace="fragments/footer :: cloud_footer"></footer>
+	<!--  -->
+	<th:block th:replace="fragments/script :: script"></th:block>
+	
+	<!--  -->
+	<th:block layout:fragment="customScript"></th:block>
+</body>
+</html>

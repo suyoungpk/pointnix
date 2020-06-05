@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+       
+        <section class="contents">
+            
+            <main class="sub-main">
+                <h1>영업활동</h1>
+                <div class="sub-contents weeklyChart">
+                  <h2 class="hidden">영업활동</h2>
+                  <div class="fixed-box">    
+                 	<h3>주간계획등록</h3>
+	                <div class="select-pager">
+						<button type="button" class="btn ico prev">이전</button>
+						<button type="button" class="btn ico next">다음</button>
+						
+						<div class="month-box">
+							2020년 4월 16일 - 2020년 4월 24일  <button class="btn ico calendar">달력</button>
+						</div>
+					</div><!--// select-pager -->
+                  </div><!-- // fixed-box -->
+               	  <div class="result-box">
+                	<div class="top-bar">
+                		2020년 3월
+                		<div class="right">
+                			<button type="button" class="btn black short btn-today">오늘</button>
+                		</div>
+                	</div><!--// top-bar -->
+                	<div class="cover">
+                		<div class="fixed-box">
+               				<table class="table-weekly">
+               					<thead>
+	                				<tr>
+	                					<th rowspan="2"></th>
+	                					<th>월</th>
+	                					<th>화</th>
+	                					<th>수</th>
+	                					<th>목</th>
+	                					<th>금</th>
+	                					<th>토</th>
+	                					<th class="sun">일</th>
+	                				</tr>
+	                				<tr>
+	                					<th>16</th>
+	                					<th>17</th>
+	                					<th>18</th>
+	                					<th>19</th>
+	                					<th>20</th>
+	                					<th>21</th>
+	                					<th class="sun">22</th>
+	                				</tr>
+	                			</thead>
+               				</table>
+               			</div>
+                		<div class="scrollBox">
+                			<table class="table-weekly">
+	                			<tbody>
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">09시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td>
+	                						<p class="bs">행복치과<button type="button" class="btn ico del">삭제</button></p>
+	                						<p class="as">포인트치과<button type="button" class="btn ico del">삭제</button></p>
+	                					</td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">10시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">11시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td><p class="bs">행복치과<button type="button" class="btn ico del">삭제</button></p></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">08시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">12시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">13시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">14시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">15시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">16시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">17시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">18시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">19시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">20시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">21시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">22시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">23시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			<!-- 1 시간-->
+	                				<tr>
+	                					<th scope="col" rowspan="2">24시</th>
+	                					<th>00분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                				<tr>
+	                					<th>30분</th>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                					<td></td>
+	                				</tr>
+	                			<!-- // 1시간 -->
+	                			</tbody>
+	                		</table>
+                		</div><!--// scrollBox -->
+                		
+                		<!-- 요일에 따라 class를
+                		 월:mon 화:tue 수:wed 목:thu 금:fri 토:sat 일 sun 
+                		 추가하면 박스 위치가 설정됩니다. 아래 스크립트 구현 -->
+                		<div class="todayBox" id="todayBox">
+                			<div class="todayBox-container" id="todayBoxContainer">
+                				<!-- <ul class="today-list" id="today-list">
+                					<li><button type="button" class="bs">금성 치과</button></li>
+                					<li><button type="button" class="as">포인트 치과</button></li>
+                				</ul> -->
+                			</div><!--// todayBox-container -->
+                		</div><!--// todayBox -->
+                	</div><!--// cover -->
+               	  </div><!--// result-box -->
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+ 	<script>
+ 		// 오늘 임시 데이터  
+		let todayData = [
+			{"title":"금성 치과","type":"영업"},
+			{"title":"포인트 치과","type":"AS"}
+		];
+ 		// 금일 요일에 따라 todayBox에 class명 붙이기 
+ 		var getTodayLabel = function() { 
+		    var week = new Array('sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat');
+		    var today = new Date().getDay();
+		    var todayLabel = week[today];
+		    return todayLabel;
+		}
+		document.getElementById("todayBox").classList.add(getTodayLabel());
+		
+ 		var todayList = {}; // 동적 리스트 객체 초기화
+ 		
+ 		// 오늘 테이블 클릭 영역 이벤트  		
+ 		let clickBox = document.getElementById("todayBoxContainer");
+ 		clickBox.addEventListener("click",function(e){
+ 			if(todayList instanceof Element) {
+ 				 document.body.removeChild(todayList);
+ 				 todayList={};
+ 			}
+ 			else
+ 				showTodayList(e);
+ 		},false);
+ 		
+ 		// 오늘 테이블 클릭 영역 밖 이벤트 
+ 		window.onclick= function(e){
+ 			if(e.target != clickBox && todayList instanceof Element){
+ 				 document.body.removeChild(todayList);
+ 				 todayList={};
+ 			}
+ 		}
+ 		 		
+ 		function showTodayList(e){
+ 			var x = e.clientX + window.pageXOffset;
+ 			var y = e.clientY + window.pageYOffset; 
+ 			
+ 			todayList = document.createElement("UL");
+ 			todayList.className = "today-list";
+ 			for(var i=0;i<todayData.length;i++){
+ 				var btnClass = "";
+ 				switch(todayData[i].type){
+ 					case "영업":btnClass = "bs"; break;
+ 					case "AS":btnClass = "as"; break;
+ 				}
+ 				var node = document.createElement("LI"); 
+ 				var btn = document.createElement("BUTTON"); 
+ 				btn.type="button";
+ 				btn.className= btnClass;
+ 				var textnode = document.createTextNode(todayData[i].title); 
+ 				btn.appendChild(textnode);
+ 				node.appendChild(btn);
+ 				todayList.appendChild(node);
+ 			}
+ 			todayList.style.left=x+"px";
+ 			todayList.style.top=y+"px";
+ 			document.body.appendChild(todayList);
+ 		}
+ 		
+ 	</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  >
+<head>
+	<title layout:title-pattern="$LAYOUT_TITLE : $CONTENT_TITLE">LOGIN</title>
+	<th:block th:replace="fragments/header"></th:block>
+	<style type="text/css">
+		body{
+			margin-top: 100px;
+			line-height: 1.6;
+		}
+		.container{
+			width: 800px;
+			margin: 0 auto;
+		}
+		.logo-div{
+			text-align: center;
+		}
+		
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+		
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+		
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 15px;
+		}
+		.tab-content.current{
+			display: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo-div">
+			<a href="https://placeholder.com"><img alt="logo" src="http://via.placeholder.com/350x150"></a>
+		</div>
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="tab-1">고객사</li>
+			<li class="tab-link" data-tab="tab-2">본사</li>
+			<li class="tab-link" data-tab="tab-3">기공소</li>
+		</ul>
+		
+		<form action="#" th:action="@{/goLogin}" method="post" th:object="${LoginRequest}">
+		<div id="tab-1" class="tab-content current">
+			<div>
+				<input type="text" th:field="*{username}" placeholder="아이디" />
+				<input type="password" th:field="*{password}" placeholder="비밀번호" />
+				<span>
+					<input type="checkbox">아이디 저장
+				</span>
+				<input type="submit" value="로그인" />
+			</div>
+		</div>
+		<div id="tab-2" class="tab-content">
+		</div>
+		<div id="tab-3" class="tab-content">
+		</div>
+		</form>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#tab-1").html($(".login-div").html());
+			$('ul.tabs li').click(function(){
+				var tab_id = $(this).attr('data-tab');
+				
+				$('ul.tabs li').removeClass('current');
+				$('.tab-content').removeClass('current');
+				
+				$(this).addClass('current');
+				$("#"+tab_id).addClass('current');
+			})
+		});
+	</script>
+</body>
+</html>

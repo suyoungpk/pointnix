@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator="layout/default">
+<style layout:fragment="customCss">
+	#tabs{position:relative; width:100%; margin-top:50px;}
+	.scroller{width:30px;height:30px;position:absolute;top:0;}
+	.scroller-left{left:70%;}
+	.scroller-right{right:0;}
+	.wrapper{position:relative; margin-left: 70%; overflow:hidden; height:42px; background:#454545;}
+	.tab-menu ul{position:absolute;margin:0;padding:0; list-style:none; min-width:3000px;}
+	.tab-menu li{display:inline-block; margin:0; padding:10px;background:#CCC;}
+</style>
+<div layout:fragment="content" class="main">
+	<!--  -->
+	
+	<div class="tab-menu">
+		<div id="tabs">
+			<div class="tab-title">asdf</div>
+			<div class="wrapper">
+				<ul class="list">
+					<li><a href="#tabs-1" class="closable">tab-1</a></li>
+					<!-- <li><a href="#tabs-1" class="closable">tab-1</a></li> -->
+				</ul>
+			</div>
+			<button class="scroller scroller-left">&larr;</button>
+    		<button class="scroller scroller-right">&rarr;</button>
+			<div id="tabs-1" class="tabs-back">
+				hihi
+			</div>
+		</div>
+		<button type="button" id="addTabs" th:text="add"></button>
+		<button type="button" id="delTabs" th:text="del"></button>
+	</div>
+</div>
+<script layout:fragment="customScript">
+	var tabId = 2;
+	$(document).ready(function() {
+		var tabs = $("#tabs").tabs();
+		$("#addTabs").click(function() {
+			var li = "<li><a href='#tabs-"+tabId+"'>tab-"+tabId+"</a></li>";
+			tabs.find(".ui-tabs-nav").append(li);
+			tabs.append("<div id='tabs-"+tabId+"'>tab tab "+tabId+"</div>");
+	        $("#tabs").tabs("refresh");
+	        tabId++;
+		});
+		$("#delTabs").click(function() {
+			// 가장 마지막 번호
+			var tabIndex = 3;
+			var tab = $('#tabs').find(".ui-tabs-nav li:eq("+tabIndex+")").remove();
+			$("tabs").tabs("refresh");
+		});
+	});
+	
+	var hidWidth;
+	var scrollBarWidths = $('#tabs .scroller-right').width() + $('#tabs .scroller-left').width();
+
+	var widthOfList = function() {
+		var itemsWidth = 0;
+		$('#tabs .list li').each(function() {
+			var itemWidth = $(this).outerWidth();
+			itemsWidth+=itemWidth;
+		});
+		return itemsWidth;
+	};
+
+	var widthOfHidden = function(){
+		return (($('#tabs .wrapper').outerWidth())-widthOfList()-getLeftPosi())-scrollBarWidths;
+	};
+
+	var getLeftPosi = function(){
+		return $('#tabs .list').position().left;
+	};
+
+	var timeout;
+	$list = $('#tabs .list');
+	$('#tabs .scroller-right').on('mousedown', function(event) {
+		event.preventDefault();
+		timeout = setInterval(function(){
+		move = widthOfHidden();
+		move = move < -10 ? -10 : move;
+			if (move >= 0){
+				clearInterval(timeout);
+				return false;
+			} else {
+				$list.animate({left:"+="+move+"px"},10, 'linear');
+			}
+		}, 10);
+	}).on('mouseup mouseleave', function(event){
+		event.preventDefault();
+		clearInterval(timeout);
+	});
+
+	$('#tabs .scroller-left').on('mousedown', function(event) {
+		console.log("hihi");
+		event.preventDefault();
+		timeout = setInterval(function(){
+			move = getLeftPosi();
+			move = move < -10 ? -10 : move;
+			if (move >= 0){
+				clearInterval(timeout);
+				$list.animate({left:"0px"},300, 'linear');
+				return false;
+			} else {
+				$list.animate({left:"-="+move+"px"},10, 'linear');
+			}
+		}, 10);
+	}).on('mouseup mouseleave', function(event){
+		event.preventDefault();
+		clearInterval(timeout);
+	});
+</script>
+</html>

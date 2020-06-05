@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<!-- default Navigation -->
+	<div id="header" th:fragment="navi">
+		<div class="head card_ui">
+			<h1><a href="#" th:text="#{header.title}"></a></h1>
+	        <div class="gnb">
+	       		<ul class="gnb">
+	       			<li><a href="#" th:text="hi1"></a></li>
+	       			<li><a href="#" th:text="hi2"></a></li>
+	       		</ul>
+			</div>
+			<div class="head_right_area">
+				<select id="locales">
+					<option value="ko" th:text="#{lang.base}" data-th-selected=" ${param.lang eq null or param.lang.toString()=='ko' }" />
+					<option value="en" th:text="#{lang.en}" data-th-selected=" ${param.lang?.toString() == 'en' }"></option>
+				</select>
+				<a th:href="@{/logout}">Logout</a>
+			</div>
+		</div>
+	</div>
+	<div id="header" th:fragment="cloud_navi">
+		<div class="head card_ui">
+	        <h1><a href="#" th:text="#{header.title}"></a></h1>
+	        <div class="gnb">
+	       		<ul class="gnb">
+	       			<li><a href="#" th:text="hi1"></a></li>
+	       			<li><a href="#" th:text="hi2"></a></li>
+	       		</ul>
+			</div>
+			<div class="head_right_area">
+				<select id="locales">
+					<option value="ko" th:text="#{lang.base}" data-th-selected=" ${param.lang eq null or param.lang.toString()=='ko' }" />
+					<option value="en" th:text="#{lang.en}" data-th-selected=" ${param.lang?.toString() == 'en' }"></option>
+				</select>
+				<a th:href="@{/logout}">Logout</a>
+			</div>
+	    </div>
+	</div>
+    
+    
+    <th:block th:fragment="navi2">
+        Layout Common Header
+    </th:block>
+</html>

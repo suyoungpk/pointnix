@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+
+<body>
+	<section class="wrapper">
+	<section class="contents">
+<main class="sub-main">
+	<h1>주문 등록</h1>
+	<div class="sub-contents orderPK">
+		 <ul class="tab-st1">
+             <li class="on"><a href="#">자주하는 주문</a></li>
+             <li><a href="#">SM System</a></li>
+         </ul>
+            
+<div class="table-wrap pk-wrap">
+<form action="" name="frm">
+	<div class="pk-list-box">
+		<div class="sub-title" id="table">
+			<h3>자주하는 주문 리스트</h3>
+			<div class="btn-wrap">
+				<button type="button" class="btn gray">자주하는 주문 삭제</button>
+				<button type="button" class="btn black">선택된 주문 담기</button>
+			</div>
+		</div>
+		
+		<table class="table-st1 order-table" title="">
+                   <colgroup>
+                       <col style="width:10%">
+			           <col>
+			           <col style="width:20%">
+			           <col style="width:20%">
+			           <col style="width:20%">
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+								<span class="form-ui chk-box">
+	                              	<input type="checkbox" name="allchk" id="allchk" onchange="check_all(this,'frm','chk')">
+	                               <label for="allchk"></label>
+                          	 	</span>	
+                              </th>
+                              <th scope="col">상품명</th>
+                              <th scope="col">수량</th>
+                              <th scope="col">단가</th>
+                              <th scope="col">주문담기</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk" id="chk01-01">
+			                          <label for="chk01-01"></label>
+			                      </span>
+                   				</td>
+	                              <td>
+	                                 <a href="">
+	                                  TS III HA Fixture(Regul
+	                                  ar, Dø4.0, 8.5mm, Pre-
+	                                  Mounted)
+	                                 </a> 
+	                              </td>
+	                              <td>
+	                                  <div class="form-ui range-box">
+	                                      <input type="text" value="0">
+	                                      <ul>
+			                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+			                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+			                            </ul>
+	                                  </div>
+	                              </td>
+	                              <td>
+	                                  350,000
+	                              </td>
+	                              <td>
+	                              	<button type="button" class="btn black put-btn">담기</button>
+	                              </td>
+                          </tr>
+                           <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk" id="chk01-02">
+			                          <label for="chk01-02"></label>
+			                      </span>
+                      		</td>
+                              <td>
+                                 <a href="">
+                                  TS III HA Fixture(Regul
+                                  ar, Dø4.0, 8.5mm, Pre-
+                                  Mounted)
+                                 </a> 
+                              </td>
+                              <td>
+                                  <div class="form-ui range-box">
+                                      <input type="text" value="0">
+                                      <ul>
+		                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+		                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+		                            </ul>
+                                  </div>
+                              </td>
+                              <td>
+                                  175,000
+                              </td>
+                              <td>
+                                  <button type="button" class="btn black put-btn">담기</button>
+                              </td>
+                          </tr>
+                      </tbody>
+                      
+                  </table>
+				<div class="pager-wrap">
+					<div class="pager">
+               			
+               			<ol>
+               				<li class="on"><strong>1</strong></li>
+               				<li><a href="/">2</a></li>
+               				<li><a href="/">3</a></li>
+               				<li><a href="/">4</a></li>
+               				<li><a href="/">5</a></li>
+               				<li><a href="/">6</a></li>
+               				<li><a href="/">7</a></li>
+               				<li><a href="/">8</a></li>
+               				<li><a href="/">9</a></li>
+               			</ol>
+               			<button type="button" class="btn btn-next">다음</button>
+               		</div>
+				</div>
+					
+			</div>
+	
+			<div class="pk-order-box">
+				<div class="sub-title" id="table">
+					<h3>패키지 간편 주문서</h3>
+					<div class="btn-wrap">
+						<button type="button" class="btn light">선택제품삭제</button>
+					</div>
+				</div>
+
+				<table class="table-st1" title="">
+                   <colgroup>
+                       <col style="width:6%">
+			           <col>
+			           <col style="width:18%">
+			           <col style="width:18%">
+			           <col style="width:18%">
+                      </colgroup>
+                      <thead>
+                          <tr>
+                              <th scope="col">
+								<span class="form-ui chk-box">
+	                              	<input type="checkbox" name="allchk" id="allchk2" onchange="check_all(this,'frm','chk2')">
+	                               <label for="allchk2"></label>
+                          	 	</span>	
+                              </th>
+                              <th scope="col">상품명</th>
+                              <th scope="col">수량</th>
+                              <th scope="col">단가</th>
+                              <th scope="col">금액</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk2" id="chk02-01">
+			                          <label for="chk02-01"></label>
+			                      </span>
+                   				</td>
+	                              <td>
+	                                 <a href="">
+	                                  TS III HA Fixture(Regul
+	                                  ar, Dø4.0, 8.5mm, Pre-
+	                                  Mounted)
+	                                 </a> 
+	                              </td>
+	                              <td>
+	                                  <div class="form-ui range-box">
+	                                      <input type="text" value="0">
+	                                      <ul>
+			                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+			                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+			                            </ul>
+	                                  </div>
+	                              </td>
+	                              <td>
+	                                  175,000
+	                              </td>
+	                              <td class="emph">
+	                                  350,000
+	                              </td>
+                          </tr>
+                           <tr>
+                              <td>
+			                      <span class="form-ui chk-box">
+			                          <input type="checkbox" name="chk2" id="chk02-02">
+			                          <label for="chk02-02"></label>
+			                      </span>
+                      		</td>
+                              <td>
+                                 <a href="">
+                                  TS III HA Fixture(Regul
+                                  ar, Dø4.0, 8.5mm, Pre-
+                                  Mounted)
+                                 </a> 
+                              </td>
+                              <td>
+                                  <div class="form-ui range-box">
+                                      <input type="text" value="0">
+                                      <ul>
+		                                <li><button type="button" class="btn ico up" onclick="amountControl(this,'plus')">더하기</button></li>
+		                                <li><button type="button" class="btn ico down" onclick="amountControl(this,'minus')">빼기</button></li>
+		                            </ul>
+                                  </div>
+                              </td>
+                              <td>
+                                  175,000
+                              </td>
+                              <td class="emph">
+                                  350,000
+                              </td>
+                          </tr>
+                      </tbody>
+                      <tfoot>
+                          <tr class="table-emph">
+                              <th colspan="2" scope="row">합계</th>
+                              <td>3</td>
+                              <td colspan="2" class="result">600,000 <span class="won">원</span></td>
+                          </tr>
+                      </tfoot>
+                  </table>
+                 
+           			<div class="order-btn orderPK-btn">
+						<button type="button" class="btn red gradient long">주문하기</button>
+					</div>
+					
+					
+				  
+				</div>
+				</form>
+			</div>
+		
+			</div>
+		</main>
+	</section>
+</section>					
+</body>
+
+</html>

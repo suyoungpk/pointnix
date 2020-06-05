@@ -1,0 +1,43 @@
+Configuration:
+  name: Log4j2 for pointnix
+  status: DEBUG
+  monitorInterval: 30
+  
+  Appenders:
+    Console:
+      name: Console
+      target: SYSTEM_OUT
+      PatternLayout:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] %C{1.} - %msg%n"
+    RollingFile:
+      name: RollingFileAppender
+      fileName: "${sys:user.home}/logs/app.log"
+      filePattern: "${sys:user.home}/logs/$${date:yyyy-MM}/app-%d{yyyy-MM-dd}.log"
+      append: true
+      PatternLayout:
+        pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] %C{1.} - %msg%n"
+      Policies:
+        TimeBasedTriggeringPolicy:
+          interval: 1
+          modulate: true
+      DefaultRolloverStrategy:
+        Delete:
+          basePath: "${sys:catalina.base}/logs/archive"
+          maxDepth: "1"
+          IfAccumulatedFileCount:
+            exceeds: 31
+  Loggers:
+    Logger:
+      name: org.springframework
+      level: DEBUG
+    Logger:
+      name: org.mybatis
+      level: DEBUG
+    Root:
+      level: ALL
+      AppenderRef:
+        ref: RollingFileAppender
+    jdbc:
+      sqltiming:
+        level: DEBUG
+        additivity: true

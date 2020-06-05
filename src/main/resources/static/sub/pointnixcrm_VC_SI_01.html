@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+ 		<section class="contents">
+            <main class="sub-main">
+                <h1>VOC</h1>
+                <div class="sub-contents orderStatement vocState">
+                  <h2 class="hidden">VOC</h2>
+                  <div class="fixed-box">
+                  	<h3>접수 현황 조회</h3>
+                  	<form action="">
+	                  	<table class="table-st2" title="접수 현황 조회">
+							<colgroup>
+								<col style="width: 15%">
+								<col style="width: 18.3%">
+								<col style="width: 15%">
+								<col style="width: 18.3%">
+								<col style="width: 15%">
+								<col style="width: 18.3%">
+							</colgroup>
+							<tr>
+								<th scope="col">주문일자</th>
+								<td class="date" colspan="5">
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>
+									<span>-</span>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">2020-04-12</option>
+										</select>
+									</div>							
+									<button type="button" class="btn light on">최근 1주일</button>
+									<button type="button" class="btn light">1개월</button>
+									<button type="button" class="btn light">2개월</button>
+									<button type="button" class="btn light">3개월</button>
+								</td>					
+							</tr>
+							<tr>
+								<th scope="col">접수파트</th>
+								<td colspan="2">
+									<div class="select-box">
+										<select name="" id="">
+											<option value="">분류</option>
+										</select>
+									</div>
+								</td>
+								<th scope="col">분류</th>
+								<td colspan="2">
+									<div class="select-box">
+										<select name="" id="" >
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">접수구분</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="">
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+								<th scope="col">진행구분</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="" >
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+								<th scope="col">처리구분</th>
+								<td>
+									<div class="select-box">
+										<select name="" id="" >
+											<option value="" >전체</option>
+										</select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="col">검색대상</th>
+								<td colspan="5">
+									<div class="select-box w240">
+										<select name="" id="" >
+											<option value="" >접수번호</option>
+										</select>
+									</div>
+									<input type="text" placeholder="검색어입력" class="w340" />
+								</td>
+							</tr>
+						</table>
+						<div class="btn-box right">
+							<button class="btn blue gradient btn-srch">검색</button>
+						</div>
+	                  </form>
+                  </div><!-- // fixed-box -->
+                  <div class="result-box">
+                  	<div class="total">
+                  		<div class="left">
+                  		전체 150건 / 조회 <em>100</em>건
+                  		</div>
+                  	</div>
+                  	<table class="table-st4">
+                  		<colgroup>
+							<col style="width: 9.4%">
+							<col style="width: 8%">
+							<col style="width: 6.3%">
+							<col style="width: 5.2%">
+							<col style="width: 8%">
+							<col style="width: 9%">
+							<col style="width: 8%">
+							<col>
+							<col style="width: 4.6%">
+							<col style="width: 6.6%">
+							<col style="width: 6.6%">
+							<col style="width: 8%">
+							<col style="width: 5.5%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>접수번호</th>
+								<th>접수일자</th>
+								<th>지점</th>
+								<th>접수자</th>
+								<th>분류</th>
+								<th>거래처명</th>
+								<th>접수파트</th>
+								<th>접수내용</th>
+								<th>접수<br>구분</th>
+								<th>진행구분</th>
+								<th>처리구분</th>
+								<th>접수일자</th>
+								<th>담당자</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt orange big w37">신청</span>
+	                   			<!-- <span class="ico ico-txt blue big w37">승인</span>
+			                   		<span class="ico ico-txt gray big w37">완료</span>
+			                   		<span class="ico ico-txt black big">진행중</span> -->
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt orange big w37">신청</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt blue big w37">승인</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt gray big w37">완료</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt black big">진행중</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt orange big w37">신청</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt orange big w37">신청</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt blue big w37">승인</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt gray big w37">완료</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+							<tr>
+								<td>V2020-0312</td>
+								<td>2020-02-20</td>
+								<td>서울강남</td>
+								<td>김강남</td>
+								<td>Unit Chair</td>
+								<td>아이사랑치과</td>
+								<td>영업마케팅</td>
+								<td><p class="txt">원가이드 홈페이지 서버 문제로 접수합니다.</p></td>
+								<td>제안</td>
+								<td>
+									<span class="ico ico-txt black big">진행중</span>
+								</td>
+								<td>의견참조</td>
+								<td>2020-03-20</td>
+								<td>배대훈</td>
+							</tr>
+						</tbody>
+                  	</table>
+                  	<div class="btn-box">
+                  		<div class="pager">
+                  			<button type="button" class="btn btn-prev">이전</button>
+                  			<ol>
+                  				<li class="on"><strong>1</strong></li>
+                  				<li><a href="/">2</a></li>
+                  				<li><a href="/">3</a></li>
+                  				<li><a href="/">4</a></li>
+                  				<li><a href="/">5</a></li>
+                  				<li><a href="/">6</a></li>
+                  				<li><a href="/">7</a></li>
+                  				<li><a href="/">8</a></li>
+                  				<li><a href="/">9</a></li>
+                  			</ol>
+                  			<button type="button" class="btn btn-next">다음</button>
+                  		</div>
+                  		<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+                  	</div>
+                  </div><!-- // result-box -->
+                </div><!-- // sub-contents -->
+            </main>
+    </section>
+ </section>
+</body>
+</html>

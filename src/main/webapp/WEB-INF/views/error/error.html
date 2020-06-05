@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  >
+<body>
+	<h1><span th:text="${code}"></span> error</h1>
+	<div>
+		error code : <span th:text="${code}"></span>
+		<br>error msg : <span th:text="${msg}"></span>
+		<br>timestamp : <span th:text="${timestamp}"></span>
+	</div>
+	<div>
+		<a th:href="@{/}">첫페이지로 이동</a>
+	</div>
+</body>
+</html>

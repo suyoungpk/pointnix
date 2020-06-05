@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+      
+        <section class="contents">
+           
+            <main class="sub-main">
+                <h1>영업활동</h1>
+                <div class="sub-contents dailyChart">
+                  <h2 class="hidden">영업활동</h2>
+                  <div class="fixed-box">    
+                 	<h3>영업/AS활동결과</h3>
+	                <div class="select-pager">
+						<button type="button" class="btn ico prev">이전</button>
+						<button type="button" class="btn ico next">다음</button>
+						
+						<div class="month-box">
+							2020년 4월 24일 (금) <button class="btn ico calendar">달력</button>
+						</div>
+					</div><!--// select-pager -->
+                  </div><!-- // fixed-box -->
+                 <div class="result-box">
+                 	<table class="table-st1">
+                 		<colgroup>
+                 			<col style="width:4.2%"/>
+                 			<col style="width:14.4%"/>
+                 			<col style="width:6.5%"/>
+                 			<col style="width:6.5%"/>
+                 			<col style="width:31.5%"/>
+                 			<col />
+                 		</colgroup>
+                 		<thead>
+	                 		<tr>
+	                 			<th scope="row">NO</th>
+	                 			<th scope="row">거래처</th>
+	                 			<th scope="row">시간</th>
+	                 			<th scope="row">구분</th>
+	                 			<th scope="row">활동계획</th>
+	                 			<th scope="row">상담내용</th>
+	                 		</tr>
+                 		</thead>
+                 		<tbody>
+                 			<tr>
+                 				<td>1</td>
+                 				<td>포인트치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt orange">영업</span>
+                 				</td>
+                 				<td>
+                 					BA,CT
+                 				</td>
+                 				<td>
+                 					<input type="text" value="" placeholder="상담내용입력"/>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<td>2</td>
+                 				<td>금성치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt orange">영업</span>
+                 				</td>
+                 				<td>
+                 					CT,TSIII
+                 				</td>
+                 				<td>
+                 					<input type="text" value="" placeholder="상담내용입력"/>
+                 				</td>
+                 			</tr>
+                 			<tr>
+                 				<td>3</td>
+                 				<td>포인트치과</td>
+                 				<td>09:30</td>
+                 				<td>
+                 					<span class="ico ico-txt blue">AS</span>
+                 				</td>
+                 				<td>
+                 					제품 CT 촬영 시 이미지가 잘려서 출력된다고 함.
+                 				</td>
+                 				<td>
+                 					<input type="text" value="" placeholder="상담내용입력"/>
+                 				</td>
+                 			</tr>
+                 		</tbody>
+                 	</table>
+                 </div><!--  // result-box -->
+             	 <div class="btn-box">
+             	 	<div class="left">
+             	 		<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+             	 	</div>
+             	 	<div class="right">
+             	 		<button type="button" class="btn black gradient long w90">수정</button>
+	               		<button type="button" class="btn red gradient long w90">등록</button>
+	                 	<button type="button" class="btn gray gradient long w90">취소</button>
+             	 	</div>
+               	 </div>
+               </div><!-- // sub-contents -->
+
+            </main>
+        </section>
+    </section>
+ 
+</body>
+</html>

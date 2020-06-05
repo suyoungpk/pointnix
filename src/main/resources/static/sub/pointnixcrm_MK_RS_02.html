@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="/css/common.css">
+	<script src="/js/common-ui.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+       
+        <section class="contents">
+            
+            <main class="sub-main">
+                <h1>시장조사</h1>
+                <div class="sub-contents pollDetail">  
+                  <h2 class="hidden">조사 상세</h2>
+                  <form action="">     
+                 	<div class="fixed-box">
+                 		<h3>조사 상세결과</h3>
+                 		<table class="table-st2">
+                 			<colgroup>
+                 				<col style="width:15%">
+                 				<col>
+                 			</colgroup>
+                 			<tr>
+                 				<th scope="col">고객조사기간</th>
+                 				<td>2020-03-12 ~ 2020-03-12</td>
+                 			</tr>
+                 			<tr>
+                 				<th scope="col">고객조사제목</th>
+                 				<td class="blue">서비스 만족도 조사</td>
+                 			</tr>
+                 		</table>
+                 	</div><!--// fixed-box -->
+                 	<ul class="tab tab-st1">
+                        <li class="on"><a href="javascript:void(0)" onclick="tab(0)" >요약결과</a></li>
+                        <li><a href="javascript:void(0)" onclick="tab(1)" >상세결과</a></li>
+                        <li><a href="javascript:void(0)" onclick="tab(2)" >개별결과</a></li>
+                    </ul>
+                 	<div class="tab-con" style="display:block">
+   						<div class="result-box">
+   							<div class="cover">
+   								<table class="table-st4">
+	   								<colgroup>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   								</colgroup>
+	   								<thead>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup"></th>
+	   										<th colspan="2" scope="rowgroup">조사 의료기관 수</th>
+	   										<th colspan="2" scope="rowgroup">설문조사 완료율</th>
+	   									</tr>
+	   									<tr>
+	   										<th scope="row">소속</th>
+	   										<th scope="row">담당자</th>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   									</tr>
+	   								</thead>
+	   								<tbody>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup" class="result">소속전체</th>
+	   										<th class="result">565</th>
+	   										<th class="result">26</th>
+	   										<th class="result">565(98.26%)</th>
+	   										<th class="result">20(76.92%)</th>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>2(100%)</td>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>0(0.00%)</td>
+	   									</tr>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup">서울강남전체</th>
+	   										<th>565</th>
+	   										<th>26</th>
+	   										<th>565(98.26%)</th>
+	   										<th>20(76.92%)</th>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>2(100%)</td>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>0(0.00%)</td>
+	   									</tr>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup">부산서면전체</th>
+	   										<th>565</th>
+	   										<th>26</th>
+	   										<th>565(98.26%)</th>
+	   										<th>20(76.92%)</th>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>2(100%)</td>
+	   									</tr>
+	   									<tr>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>130</td>
+	   										<td>2</td>
+	   										<td>125 (96.15%)</td>
+	   										<td>0(0.00%)</td>
+	   									</tr>
+	   								</tbody>
+	   							</table>
+   							</div>
+   						</div><!--// result-box -->
+                 	</div><!--// tab-con -->
+                 	<div class="tab-con">
+   						<div class="result-box">
+   							<div class="cover">
+   								<table class="table-st4">
+	   								<colgroup>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   									<col style="width:16.6%"/>
+	   								</colgroup>
+	   								<thead>
+	   									<tr>
+	   										<th scope="row">사업부</th>
+	   										<th scope="row">지점</th>
+	   										<th colspan="2" scope="rowgroup">조사 의료기관 수</th>
+	   										<th colspan="2" scope="rowgroup">설문조사 완료율</th>
+	   									</tr>
+	   									<tr>
+	   										<th scope="row">영업사업부</th>
+	   										<th scope="row">서울강남</th>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   									</tr>
+	   								</thead>
+	   								<tbody>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup" class="result">전체</th>
+	   										<th class="result">565</th>
+	   										<th class="result">26</th>
+	   										<th class="result">565(98.26%)</th>
+	   										<th class="result">20(76.92%)</th>
+	   									</tr>
+	   								</tbody>
+	   							</table>
+	   							<div class="pollResult">
+	   								<table class="table-st4">
+			                 	 		<thead>
+			                 	 			<tr>
+			                 	 				<th>Q1. Unit chair 구매 시 환자관점에서 중요한 부분은 무엇이라 생각합니까?</th>
+			                 	 			</tr>
+			                 	 		</thead>
+			                 	 		<tbody>
+			                 	 			<tr>
+			                 	 				<td>
+			                 	 					<ul class="resultBar">
+			                 	 						<li class="best">
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인</span></p>
+			                 	 							<p class="bar"><span style="width:90%">90%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인123123412341234</span></p>
+			                 	 							<p class="bar"><span style="width:80%">80%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인</span></p>
+			                 	 							<p class="bar"><span style="width:60%">60%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인</span></p>
+			                 	 							<p class="bar"><span style="width:75%">75%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인</span></p>
+			                 	 							<p class="bar"><span style="width:30%">30%</span></p>
+			                 	 						</li>
+			                 	 					</ul>
+			                 	 				</td>
+			                 	 			</tr>
+			                 	 		</tbody>
+			                 	 	</table>
+			                 	 	<table class="table-st4">
+			                 	 		<thead>
+			                 	 			<tr>
+			                 	 				<th>Q2.  Unit chair의 장점은 무엇이라 생각합니까?</th>
+			                 	 			</tr>
+			                 	 		</thead>
+			                 	 		<tbody>
+			                 	 			<tr>
+			                 	 				<td>
+			                 	 					<ul class="resultBar">
+			                 	 						<li>
+			                 	 							<p class="title"><span>사용하기가 편리하다.</span></p>
+			                 	 							<p class="bar"><span style="width:60%">60%</span></p>
+			                 	 						</li>
+			                 	 						<li class="best">
+			                 	 							<p class="title"><span>기동성이 빠르다.</span></p>
+			                 	 							<p class="bar"><span style="width:80%">80%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>움직임이 부드러워 환자를 진료하기 쉽다</span></p>
+			                 	 							<p class="bar"><span style="width:50%">50%</span></p>
+			                 	 						</li>
+			                 	 						<li>
+			                 	 							<p class="title"><span>인테리어와 어울리는 디자인</span></p>
+			                 	 							<p class="bar"><span style="width:75%">75%</span></p>
+			                 	 						</li>
+			                 	 					</ul>
+			                 	 				</td>
+			                 	 			</tr>
+			                 	 		</tbody>
+			                 	 	</table>
+	   							</div><!-- // pollResult -->
+   							</div><!--// cover -->
+   						</div><!--// result-box -->
+   						<div class="btn-box">
+							<button type="button" class="btn green gradient btn-excel-download">엑셀 다운로드</button>
+						</div>
+                 	</div>
+                 	<div class="tab-con">
+                 		<div class="fixed-box">
+                 			<form action="">
+                 				<table class="table-st2">
+                 					<colgroup>
+		                 				<col style="width:15%">
+		                 				<col style="width:35%">
+		                 				<col style="width:15%">
+		                 				<col style="width:35%">
+		                 			</colgroup>
+		                 			<tr>
+										<th scope="col">본부/지점</th>
+										<td>
+											<input type="text" placeholder="본부 및 지점 입력" />	
+										</td>
+										<th scope="col">영업사원</th>
+										<td>
+											<div class="form-ui srch-box">
+				                                <input type="text" placeholder="영업사원 입력">
+				                                <button type="button" class="btn srch">검색하기</button>
+				                            </div>
+										</td>
+									</tr>
+                 				</table>
+                 				<div class="btn-box right">
+                 					<button class="btn blue gradient btn-srch">조회</button>
+                 				</div>
+                 			</form>
+                 		</div><!--// fixed-box -->
+   						<div class="result-box">	
+   							<div class="cover">
+   								<table class="table-st4">
+	   								<colgroup>
+	   									<col style="width:25%"/>
+	   									<col style="width:25%"/>
+	   									<col style="width:25%"/>
+	   									<col style="width:25%"/>
+	   								</colgroup>
+	   								<thead>
+	   									<tr>
+	   										<th colspan="2" scope="rowgroup">조사 의료기관 수</th>
+	   										<th colspan="2" scope="rowgroup">설문조사 완료율</th>
+	   									</tr>
+	   									<tr>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   										<th scope="row">거래처</th>
+	   										<th scope="row">비거래처</th>
+	   									</tr>
+	   								</thead>
+	   								<tbody>
+	   									<tr>
+	   										<th class="result">565</th>
+	   										<th class="result">26</th>
+	   										<th class="result">565(98.26%)</th>
+	   										<th class="result">20(76.92%)</th>
+	   									</tr>
+	   								</tbody>
+	   							</table>
+	   							<table class="table-st4">
+	   								<colgroup>
+	   									<col style="width:7.5%"/>
+	   									<col style="width:9%"/>
+	   									<col />
+	   									<col style="width:9%"/>
+	   									<col style="width:9%"/>
+	   									<col style="width:7.5%"/>
+	   									<col style="width:14.3%"/>
+	   									<col style="width:14.3%"/>
+	   									<col style="width:7.5%"/>
+	   								</colgroup>
+	   								<thead>
+	   									<tr>
+	   										<th scope="row">통계제외</th>
+	   										<th scope="row">거래처명</th>
+	   										<th scope="row">고객조사제목</th>
+	   										<th scope="row">본부</th>
+	   										<th scope="row">지점</th>
+	   										<th scope="row">영업사원</th>
+	   										<th scope="row">조사시작일시</th>
+	   										<th scope="row">조사등록일시</th>
+	   										<th scope="row">응답보기</th>
+	   									</tr>
+	   								</thead>
+	   								<tbody>
+	   									<tr>
+	   										<td>
+	   											<span class="form-ui chk-box">
+						                            <input type="checkbox" name="" id="chk01-01">
+						                            <label for="chk01-01"><span class="hidden">제외하기</span></label>
+						                        </span>
+	   										</td>
+	   										<td>포인트치과</td>
+	   										<td><p>상반기 TS III BA Fixture 고객123456dddddddddddddddddd6</p></td>
+	   										<td>서울남부<br>영업본부</td>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>
+	   											<button class="btn ico btn-reply-view">응답보기</button>
+	   										</td>
+	   									</tr>
+	   									<tr>
+	   										<td>
+	   											<span class="form-ui chk-box">
+						                            <input type="checkbox" name="" id="chk01-02">
+						                            <label for="chk01-02"><span class="hidden">제외하기</span></label>
+						                        </span>
+	   										</td>
+	   										<td>포인트치과</td>
+	   										<td><p>상반기 TS III BA Fixture 고객</p></td>
+	   										<td>서울남부<br>영업본부</td>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>
+	   											<button class="btn ico btn-reply-view">응답보기</button>
+	   										</td>
+	   									</tr>
+	   									<tr>
+	   										<td>
+	   											<span class="form-ui chk-box">
+						                            <input type="checkbox" name="" id="chk01-03">
+						                            <label for="chk01-03"><span class="hidden">제외하기</span></label>
+						                        </span>
+	   										</td>
+	   										<td>포인트치과</td>
+	   										<td><p>상반기 TS III BA Fixture 고객</p></td>
+	   										<td>서울남부<br>영업본부</td>
+	   										<td>서울강남</td>
+	   										<td>김강남</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>2020-03-20 13:30:50</td>
+	   										<td>
+	   											<button class="btn ico btn-reply-view">응답보기</button>
+	   										</td>
+	   									</tr>
+	   								</tbody>
+	   							</table>
+   							</div><!--// cover -->
+   						</div><!--// result-box -->
+                 	</div><!--//  result-box -->
+                   </form>
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+</body>
+</html>
