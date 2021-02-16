@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트닉스 CRM</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/common-ui.js"></script>
+	
+	
+</head>
+<body>
+    <section class="wrapper">
+       
+        <section class="contents">
+           
+            <main class="sub-main">
+                <h1>주문의뢰</h1>
+                <div class="sub-contents orderRequestFrom">
+                  
+                  	<div class="tab-wrapper">
+                  		<ul class="tab-style">
+                  			<li class="on">
+                  				<button class="btn-tab" type="button">CRM2007011234</button>
+                  				<button class="btn-remove" type="button">x</button>
+                  			</li>
+                  		</ul>
+                  		<div class="right">
+                  			<button type="button" class="btn ico plus btn-add">추가</button>
+                  			<button class="btn-order btn black short" type="button" onclick="result()">의뢰하기</button>
+                  		</div>
+                  	</div><!-- tab-wrapper -->
+                  	<h3>포인트치과 <strong class="blue">홍길동</strong> 원장님</h3>
+                  	<ul class="tab-con-form"> <!-- 양식리스트 --> 
+                  		<li class="active">
+                  			<form action="" name="frm">
+                  			<div class="form-box">
+                  				<div class="fixed-box">
+                  					<table class="table-st2" title="양식작성">
+										<colgroup>
+											<col style="width: 15%">
+											<col style="width: 35%">
+											<col style="width: 15%">
+											<col style="width: 35%">
+										</colgroup>
+										<tbody>
+											<tr>
+												<th scope="col">가공소</th>
+												<td colspan="3">
+													<div class="select-box">
+														<select name="" id="">
+															<option value="">선택</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<th scope="col">의뢰일자</th>
+												<td >
+													<div class="select-box">
+														<select name="" id="" disabled>
+															<option value="">2020-04-12</option>
+														</select>
+													</div>
+												</td>
+												<th scope="col">납품요청일자</th>	
+												<td>
+													<div class="select-box">
+														<select name="" id="">
+															<option value="">2020-04-12</option>
+														</select>
+													</div>	
+												</td>				
+											</tr>
+											<tr>
+												<th scope="col">환자명</th>
+												<td colspan="3">
+													<input type="text" value="" placeholer="이름입력">
+												</td>
+											</tr>
+											<tr>
+												<th scope="col">기공물</th>
+												<td colspan="3"  class="half-select">
+													<div class="select-box" >
+														<select name="" id="" onchange="chgType(this)" >
+															<option value="ops1" selected>일반보철</option>
+															<option value="ops2">가이드</option>
+															<option value="ops3">교정</option>
+														</select>
+													</div>
+													<div class="select-box" >
+														<select name="" id="" onchange="chgType2(this)">
+															<option value="implant" selected>Implant</option>
+															<option value="crown">Crown</option>
+															<option value="inlay">Inlay</option>
+														</select>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="dependOption" id="dependOption">
+										<table class="table-st2" title="양식작성">
+											<colgroup>
+												<col style="width: 15%">
+												<col style="width: 35%">
+												<col style="width: 15%">
+												<col style="width: 35%">
+											</colgroup>
+											<tbody>
+												<tr>
+													<th scope="col">임플란트 회사</th>
+													<td colspan="3" class="half-select">
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">None</option>
+															</select>
+														</div>
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">None</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">Abutment</th>
+													<td colspan="3">
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">None</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">보철종류</th>
+													<td>
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">Full zirconia crown</option>
+															</select>
+														</div>
+													</td>
+													<th scope="col">보철타입</th>
+													<td>
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">Bridge</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">Pontic</th>
+													<td colspan="3">
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">None</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">Margin type</th>
+													<td colspan="3">
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">None</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th scope="col">shade</th>
+													<td colspan="3">
+														<div class="select-box">
+															<select name="" id="" >
+																<option value="">A1</option>
+															</select>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div><!-- // dependOption -->
+									<div class="select-tooth">
+										<p class="tit">치식선택</p>
+										<p class="select-tooth-img">
+											<img src="../images/img-tooth.jpg" alt="img-tooth.jpg" usemap="#img-tooth">
+											<map name="img-tooth">
+											    <area shape="circ" coords="82,177,14.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="87,150,14.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="92,124,13" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="100,103,10.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="111,87,12" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="124,71,12.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="144,61,12" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="166,53,13" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="194,51,12.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="220,57,12" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="237,72,11" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="250,88,11" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="256,104,11.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="261,127,12" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="272,150,12.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="276,172,15.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="275,228,15" href="javascript:void(0)"  alt="" />
+											    <area shape="circ" coords="268,254,15" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="259,281,14" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="248,299,11.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="237,314,11" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="223,326,10" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="209,336,8" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="190,341,8" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="171,340,10" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="153,335,8.5" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="139,324,10" href="javascript:void(0)" alt="" />
+											    <area shape="circ" coords="125,313,11" href="javascript:void(0)"  alt="" />
+											    <area shape="circ" coords="113,299,11" href="javascript:void(0)"  alt="" />
+											    <area shape="circ" coords="100,277,13" href="javascript:void(0)"  alt="" />
+											    <area shape="circ" coords="91,253,15" href="javascript:void(0)"  alt="" />
+											    <area shape="circ" coords="81,230,13.5" href="javascript:void(0)"  alt="" />
+											</map>
+										</p>
+									</div>
+                  				</div>
+                  				<div class="file-list">
+                  					<h3>첨부파일<span>(스캐너가 없을 시 서울시 구로구 디지털로 243 지하이시티 1505호 리더스덴탈 로 석고모형을 보내주세요.)</span></h3>
+	                  				<table class="table-st1" title="">
+				                        <colgroup>
+				                            <col style="width:5.5%">
+				                            <col>
+				                            <col style="width:10%">
+				                        </colgroup>
+				                        <thead>
+				                            <tr>
+				                                <th scope="col">
+													<span class="form-ui chk-box">
+						                                <input type="checkbox" name="allchk"  id="allchk" onchange="check_all(this,'frm','file')">
+						                                <label for="allchk"></label>
+						                            </span>
+				                                </th>
+				                                <th scope="col">상품명</th>
+				                                <th scope="col">수량</th>
+				                            </tr>
+				                        </thead>
+				                        <tbody>
+				                            <tr>
+				                                <td>
+				                                	<span class="form-ui chk-box">
+						                                <input type="checkbox" name="file"  id="file-01">
+						                                <label for="file-01"></label>
+						                            </span>
+				                                </td>
+				                                <td>포인트치과 홍길동 원장님 주문의뢰현황.jpg</td>
+				                                <td>2.5MB</td>
+				                            </tr>
+				                            <tr>
+				                                <td>
+				                                	<span class="form-ui chk-box">
+						                                <input type="checkbox" name="file"  id="file-02">
+						                                <label for="file-02"></label>
+						                            </span>
+				                                </td>
+				                                <td>포인트치과 홍길동 원장님 주문의뢰현황.jpg</td>
+				                                <td>2.5MB</td>
+				                            </tr>
+				                        </tbody>
+				                    </table>
+	                  			</div>
+	                  			<div class="btn-box">
+	                  				<div class="right">
+	                  					<button type="button" class="btn gray middle">첨부파일</button>
+	                  					<button type="button" class="btn light middle w50">삭제</button>
+	                  				</div>
+	                  			</div>
+                 			</div><!--// file-list -->
+                 			<div class="customRequest">
+                 				<h3>요청사항</h3>
+                 				<textarea name="" id="" ></textarea>
+                 			</div>
+                 			<!-- <div class="btn-box">
+                 				<div class="right">
+                 					<button class="btn black gradient long w90">리셋</button>
+                 					<button class="btn blue gradient long w90"  type="button">저장</button>
+                 				</div>
+                 			</div> -->
+                 		</form>
+                  		</li>
+                  	</ul>
+<template id="optionType01">
+	<table class="table-st2" title="양식작성">
+		<colgroup>
+			<col style="width: 15%">
+			<col style="width: 35%">
+			<col style="width: 15%">
+			<col style="width: 35%">
+		</colgroup>
+		<tbody>
+		<tr>
+			<th scope="col">임플란트 회사</th>
+			<td colspan="3" class="half-select">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">Abutment</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">보철종류</th>
+			<td>
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">Full zirconia crown</option>
+					</select>
+				</div>
+			</td>
+			<th scope="col">보철타입</th>
+			<td>
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">Bridge</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">Pontic</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">Margin type</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">shade</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">A1</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</template>
+<template id="optionType02">
+	<table class="table-st2" title="양식작성">
+		<colgroup>
+			<col style="width: 15%">
+			<col style="width: 35%">
+			<col style="width: 15%">
+			<col style="width: 35%">
+		</colgroup>
+		<tbody>
+		<tr>
+			<th scope="col">보철종류</th>
+			<td>
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+			<th scope="col">보철타입</th>
+			<td>
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">Pontic</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">None</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">Margin type</th>
+			<td colspan="3">
+				<div class="select-box hasmaxwidth">
+					<select name="" id="">
+						<option value="">None</option>
+					</select>
+				</div>
+				<input type="text"  class="hasmaxwidth"../> mm
+			</td>
+		</tr>
+		<tr>
+			<th scope="col">shade</th>
+			<td colspan="3">
+				<div class="select-box">
+					<select name="" id="" >
+						<option value="">A1</option>
+					</select>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+</template>
+<template id="optionType03">
+	<table class="table-st2" title="양식작성">
+		<colgroup>
+			<col style="width: 15%">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="col">Inlay 종류</th>
+				<td>
+					<div class="select-box">
+						<select name="" id="" >
+							<option value="">None</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</template>
+<template id="optionType04">
+	<table class="table-st2" title="양식작성">
+			<colgroup>
+				<col style="width: 15%">
+				<col>
+			</colgroup>
+		<tbody>
+			<tr>
+				<th scope="col">임플란트 종류</th>
+				<td>
+					<div class="select-box">
+						<select name="" id="" >
+							<option value="">None</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="col">가이드 키트</th>
+				<td>
+					<div class="select-box">
+						<select name="" id="" >
+							<option value="">None</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th scope="col">수술방법<br>(다중선택가능)</th>
+				<td>
+					<span class="form-ui chk-box">
+                           <input type="checkbox" name="ops" id="ops1" >
+                           <label for="ops1">Flapless</label>
+                       </span>
+                       <span class="form-ui chk-box">
+                           <input type="checkbox" name="ops" id="ops2" >
+                           <label for="ops2">즉시발치</label>
+                       </span>
+                       <span class="form-ui chk-box">
+                           <input type="checkbox" name="ops" id="ops3" >
+                           <label for="ops3">GBR</label>
+                       </span>
+                       <span class="form-ui chk-box">
+                           <input type="checkbox" name="ops" id="ops4" >
+                           <label for="ops4">즉시보철</label>
+                       </span>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</template>
+<template id="optionType05">
+	<table class="table-st2" title="양식작성">
+		<colgroup>
+			<col style="width: 15%">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="col">교정 부위</th>
+				<td>
+					<div class="select-box">
+						<select name="" id="" >
+							<option value="">None</option>
+						</select>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</template>
+	<script src="../js/jquery.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2Cdefault"></script>
+    <script src="../js/pointimplant.js"></script>
+    <script>
+		 $(function(){// tab 
+           	 $(".tab-wrapper .btn-add").click(function(){
+           		if($(".tab-wrapper .tab-style").find("li").length == 5){
+              		 alert("5개를 초과할 수 없습니다.");
+              		 return false;
+              	 }
+           		 $(".tab-wrapper .tab-style").find("li").removeClass("on");
+              		 var li = document.createElement("li");
+              		  li.classList.add("on");
+              		 var btnTab = document.createElement("button");
+              		 btnTab.type="button";
+              		 btnTab.classList.add("btn-tab");
+              		 btnTab.innerText = "CRM2007011235"; // 여기에 생성된 번호 넣어주면 됩니다.
+             			 var btnRemove = document.createElement("button");
+             			 btnRemove.type="button";
+              		 btnRemove.classList.add("btn-remove");
+              		 btnRemove.innerText = "x";
+              		 li.appendChild(btnTab);
+              		 li.appendChild(btnRemove);
+              	 $(".tab-wrapper .tab-style").append(li);
+              	 
+           	  });
+           	 $(document).on("click",".tab-wrapper .btn-tab",function(){
+           		$(".tab-wrapper .tab-style").find("li").removeClass("on");
+           		$(this).parent().addClass("on");
+           	  });
+           	$(document).on("click",".tab-wrapper .btn-remove",function(){
+           		if($(".tab-wrapper .tab-style").find("li").length == 1){
+	           		 alert("탭은 최소 1개 이상 되어야 합니다.");
+              		 return false;
+           		}
+           		if($(this).parent().hasClass("on")){
+           			$(this).parent().remove();
+           			$(".tab-wrapper .tab-style").find("li").first().addClass("on");
+           		}
+           		else
+           			$(this).parent().remove();
+           	  });
+	           	
+             });
+		 	resetTooth(); // 초기화 
+		 	console.log(selectedList); // 치아 선택한 리스트  
+  </script>
+   
+                </div><!-- // sub-contents -->
+            </main>
+        </section>
+    </section>
+</body>
+</html>
