@@ -80,3 +80,13 @@ function tab(index){
 		conList[i].style.display="none";
 	}
 }
+// $(function(){
+// 	$('.sub-menu .sub > a').on('click',function(){
+// 		if($(this).parent().hasClass('on')){
+// 			$('.sub-menu .sub').removeClass('on');
+// 		}else{
+// 			$('.sub-menu .sub').removeClass('on');
+// 			$(this).parent().addClass('on');
+// 		}		
+// 	});
+// });
