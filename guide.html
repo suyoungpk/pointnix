@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>guide</title>
-    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="css/common.css">
     <script src="./js/common-ui.js"></script>
+    <script src="./js/jquery.js"></script>
     <style>
         .guide  p{line-height:150%}
         .guide .title{width:100%;border-top:1px solid #ccc;margin:50px 0 30px;text-align:center;padding:30px 0 0}
@@ -34,6 +35,7 @@
                         <li><a href="#form">form</a></li>
                         <li><a href="#list">list</a></li>
                         <li><a href="#pager">pager</a></li>
+                        <li><a href="#board">board</a></li>
                     </ul>
 <!-- //////////////////////////////////title ////////////////////////////////////////////////////-->
                     <div class="title" id="title"><em>TITLE</em></div>
@@ -90,6 +92,11 @@
                     	<span class="ico ico-txt orange">주문</span>
                    		<span class="ico ico-txt blue">AS</span>
                    		<span class="ico ico-txt gray">매입</span>
+                   		
+                   		<span class="ico ico-txt orange big">미진행</span>
+                   		<span class="ico ico-txt blue big">조사대기</span>
+                   		<span class="ico ico-txt gray big">조사대기</span>
+                   		<span class="ico ico-txt black big">조사대기</span>
                    		
                    <!-- //////////////////////////////////tab ////////////////////////////////////////////////////-->         
                    <div class="title" id="tab"><em>TAB</em></div>
@@ -974,14 +981,14 @@
                   			<button type="button" class="btn btn-prev">이전</button>
                   			<ol>
                   				<li class="on"><strong>1</strong></li>
-                  				<li><a href="/">2</a></li>
-                  				<li><a href="/">3</a></li>
-                  				<li><a href="/">4</a></li>
-                  				<li><a href="/">5</a></li>
-                  				<li><a href="/">6</a></li>
-                  				<li><a href="/">7</a></li>
-                  				<li><a href="/">8</a></li>
-                  				<li><a href="/">9</a></li>
+                  				<li><a href="./">2</a></li>
+                  				<li><a href="./">3</a></li>
+                  				<li><a href="./">4</a></li>
+                  				<li><a href="./">5</a></li>
+                  				<li><a href="./">6</a></li>
+                  				<li><a href="./">7</a></li>
+                  				<li><a href="./">8</a></li>
+                  				<li><a href="./">9</a></li>
                   			</ol>
                   			<button type="button" class="btn btn-next">다음</button>
                   		</div>
@@ -989,7 +996,80 @@
 			
                     <div class="title" id="popup"><em>POPUP</em></div>
                     <button type="button" class="btn gray" onclick="openPop('order')">팝업열기</button>
-                    
+                     <div class="title" id="board"><em>BOARD</em></div>
+				     <div class="board">
+				     	<ul class="board-title">
+				     		<li class="no">No</li>
+				     		<li class="type">구분</li>
+				     		<li class="tit">제목</li>
+				     		<li class="date">날짜</li>
+				     		<li class="hit">조회수</li>
+				     	</ul>
+				     	<ul class="board-list">
+				     		<li>
+				     			<ul class="board-omit">
+				     				<li class="no">30</li>
+						     		<li class="type">고객</li>
+						     		<li class="tit">
+						     			<p>포인트닉스 패키지 혜택안내 포인트닉스 패키지 혜택 안내포인트닉스 패키지 혜택 안내포인트닉스 패키지패키지패키지패키지패키지</p>
+						     		</li>
+						     		<li class="date">2020-03-28</li>
+						     		<li class="hit">15</li>
+				     			</ul>
+				     			<button type="button" class="btn-view"></button>
+				     			<div class="board-con">
+				     				<div class="context">
+				     					포인트닉스 Q.C 팀입니다.<br>
+										NixPen 2019년 8월 업데이트 내용입니다.<br><br>
+										
+										1. 업데이트 날짜: 2019년 8월 27일 오후 6시 시작 <br>
+										2. 프로그램명: NixPen<br>
+										3. 업데이트 파일   - NixSQL.exe   Person.exe   Cm.exe<br>
+										4. 업데이트 내용    - 2019년도 8월 누적패치 및 기능추가<br>
+										5. 업데이트 방법<br><br>
+										
+										- 차트 실행 시 자동으로 업데이트 
+											     					
+				     				</div><!--// context -->
+				     				<div class="file-list">
+				     					<a href="javascript:void(0)" download><span class="ico file">업데이트 파일 가이드.jpg</span></a>
+				     					<a href="javascript:void(0)" download><span class="ico file">업데이트 파일 가이드.jpg</span></a>
+				     				</div><!--// file-list -->
+				     			</div><!--// board-con -->
+				     		</li>
+				     		<li>
+				     			<ul class="board-omit">
+				     				<li class="no">30</li>
+						     		<li class="type">고객</li>
+						     		<li class="tit">
+						     			<p>포인트닉스 패키지 혜택안내 포인트닉스 패키지 혜택 안내포인트닉스 패키지 혜택 안내포인트닉스 패키지패키지패키지패키지패키지 패키지패키지패키지패키지패키지 패키지패키지패키지패키지패키지</p>
+						     		</li>
+						     		<li class="date">2020-03-28</li>
+						     		<li class="hit">15</li>
+				     			</ul>
+				     			<button type="button" class="btn-view"></button>
+				     			<div class="board-con">
+				     				<div class="context">
+				     					포인트닉스 Q.C 팀입니다.<br>
+										NixPen 2019년 8월 업데이트 내용입니다.<br><br>
+										
+										1. 업데이트 날짜: 2019년 8월 27일 오후 6시 시작 <br>
+										2. 프로그램명: NixPen<br>
+										3. 업데이트 파일   - NixSQL.exe   Person.exe   Cm.exe<br>
+										4. 업데이트 내용    - 2019년도 8월 누적패치 및 기능추가<br>
+										5. 업데이트 방법<br><br>
+										
+										- 차트 실행 시 자동으로 업데이트 
+											     					
+				     				</div><!--// context -->
+				     				<div class="file-list">
+				     					<a href="javascript:void(0)" download><span class="ico file">업데이트 파일 가이드.jpg</span></a>
+				     					<a href="javascript:void(0)" download><span class="ico file">업데이트 파일 가이드.jpg</span></a>
+				     				</div><!--// file-list -->
+				     			</div><!--// board-con -->
+				     		</li>
+				     	</ul>
+				     </div><!--// board -->
                 </div>
             </main>
             <div class="popup" id="order">
@@ -1024,11 +1104,23 @@
 		            </div>
 		        </div>
 		    </div>
+	    
         </section>
         <!-- <footer>
 
         </footer> -->
     </section>
-    
+    <script>
+    	$(function(){
+    		$(".board .btn-view").click(function(){
+    			var t = $(this).next()
+    			if(t.css("display") == "none"){
+    				$(".board-con").slideUp();
+    				t.slideDown();
+    			}
+    			else t.slideUp();
+    		});
+    	});
+    </script>
 </body>
 </html>
